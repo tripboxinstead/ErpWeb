@@ -26,7 +26,7 @@ const Itinerary = ({day,items}) => {
                 </h3>
             </header>
             {/* <article class="open" style={{display : "block" }}> */}
-            <article class="" style={{display : "none" }}  >
+            <article  >
                 <h4>전체 일정</h4>
                 <div class="summaryWrapbox">
                 {

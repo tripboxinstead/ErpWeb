@@ -5,30 +5,45 @@ const ItineraryAllDay = ({items}) => {
 
     const [newItem, setNewItem] = useState([]);
 
-    const division = (arr, number) => {
+    // const division = (arr, number) => {
         
-        const length = arr.length;
-        const divide = Math.floor(length / number) + (Math.floor( length % number ) > 0 ? 1 : 0);
-        const newArray = [];
+    //     const length = arr.length;
+    //     const divide = Math.floor(length / number) + (Math.floor( length % number ) > 0 ? 1 : 0);
+    //     const newArray = [];
       
-        for (let i = 0; i <= divide; i++) {
-          // 배열 0부터 n개씩 잘라 새 배열에 넣기
-          newArray.push(items.splice(0, number)); 
-          //setNewItem(newItem => [...newItem,arr.splice(0, number)]) //.push(arr.splice(0, number)); 
-        }
+    //     for (let i = 0; i <= divide; i++) {
+    //       // 배열 0부터 n개씩 잘라 새 배열에 넣기
+    //       newArray.push(items.splice(0, number)); 
+    //       //setNewItem(newItem => [...newItem,arr.splice(0, number)]) //.push(arr.splice(0, number)); 
+    //     }
        
-        setNewItem([...newArray]);
+    //     setNewItem([...newArray]);
 
-     
-      }
+    //   }
+
+    //   useEffect (() => {
+
+    //     division(items,5);
+
+    //   },[])
 
       useEffect (() => {
 
-        division(items,5);
-
-      },[])
-
-      useEffect (() => {
+        async function  division  (arr, number)  {
+        
+            const length = arr.length;
+            const divide = Math.floor(length / number) + (Math.floor( length % number ) > 0 ? 1 : 0);
+            const newArray = [];
+          
+            for (let i = 0; i <= divide; i++) {
+              // 배열 0부터 n개씩 잘라 새 배열에 넣기
+              newArray.push(items.splice(0, number)); 
+              //setNewItem(newItem => [...newItem,arr.splice(0, number)]) //.push(arr.splice(0, number)); 
+            }
+           
+            setNewItem([...newArray]);
+    
+          }
 
         division(items,5);
 
