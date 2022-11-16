@@ -48,14 +48,16 @@ const ItineraryAllDay = ({items}) => {
                  newItem.length > 0 && newItem.map((Mainitem,index) => {
                     return (
                         
+                        
                         <ul key={index}>
                             {
                                 Mainitem.length > 0 && Mainitem.map((subItems, sIndex) => {                      
-                                   return <li key={sIndex} class="tour"><p><span>{subItems.PlaceName}</span></p></li>
+                                   return  <li key={sIndex} class="tour"><p><span>{subItems.PlaceName}</span></p></li>
                                 })
                             }
                     
                         </ul>
+                        
                     )
              })}
     

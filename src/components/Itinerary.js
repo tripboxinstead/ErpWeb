@@ -25,7 +25,8 @@ const Itinerary = ({day,items}) => {
                 <img src="images/ic_arrow_bottom.svg" width="" height="" alt="" />
                 </h3>
             </header>
-            <article class="open" style={{display : "block" }}>
+            {/* <article class="open" style={{display : "block" }}> */}
+            <article class="" style={{display : "none" }}  >
                 <h4>전체 일정</h4>
                 <div class="summaryWrapbox">
                 {
@@ -50,8 +51,7 @@ const Itinerary = ({day,items}) => {
                     }) : <p>no </p> 
                 }
                 </ul>
-                <ItineraryTourEtc />
-               
+                {items && <ItineraryTourEtc items = {items} day={day} /> }               
 
                 </div>
             </article>
