@@ -1,0 +1,745 @@
+.contentsWrap.mypage:not(.full) {
+  background: #f5f5f5;
+}
+.contentsWrap.mypage.policy {
+  background: #fff;
+}
+
+.contentsWrap.mypage > .headerWrap header {
+  justify-content: center;
+  border-bottom: 1px solid #e6e6e6;
+  padding-left: 0;
+  height: 49px;
+}
+.contentsWrap.mypage > .headerWrap header h1 {
+}
+.contentsWrap.mypage > .headerWrap header button.btn_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contentsWrap.mypage > .headerWrap > ul {
+  background: #fff;
+  /* max-width: 768px; */
+  max-width: 1024px;
+  min-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+}
+.contentsWrap.mypage > .headerWrap > ul p {
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 3em;
+}
+.contentsWrap.mypage > .headerWrap > ul p a {
+  display: block;
+}
+.contentsWrap.mypage > .headerWrap > ul li {
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  flex: 1;
+  margin: 0;
+  min-width: 96px;
+}
+.contentsWrap.mypage > .headerWrap > ul li.on p {
+  color: #ff5b00;
+  font-weight: 500;
+}
+.contentsWrap.mypage > .headerWrap > ul li.on:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background: #ff5b00;
+}
+
+.contentsWrap.mypage.full section.list {
+  /*padding-top:88px;*/
+}
+.contentsWrap.mypage.detail section.detail {
+  /*padding-bottom:40px;*/
+  padding: 49px 0 0;
+}
+
+.contentsWrap.mypage section:not(.list) > ul > li {
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 5%);
+  margin-bottom: 8px;
+  padding: 24px 16px;
+}
+
+.contentsWrap.mypage section:not(.list) > ul {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 49px);
+}
+.contentsWrap.mypage section:not(.list) > ul > li:last-child {
+  box-shadow: none;
+  margin-bottom: 0;
+  flex: 1;
+}
+.contentsWrap.mypage section.detail.cancel > ul {
+  min-height: calc(100vh - 169px);
+}
+
+.contentsWrap.mypage .order {
+  padding: 24px 16px;
+}
+.contentsWrap.mypage section.detail .order {
+  padding: 0;
+}
+
+.contentsWrap.mypage .order li {
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+}
+.contentsWrap.mypage .order li + li {
+  margin-top: 24px;
+}
+.contentsWrap.mypage section.list .order li {
+  cursor: pointer;
+}
+.contentsWrap.mypage section.list .order li:hover {
+  border-color: #8e8e8e;
+}
+
+.contentsWrap.mypage .order li dl {
+  font-size: 1.4em;
+  overflow: hidden;
+}
+
+.contentsWrap.mypage .order li dl dt {
+  clear: both;
+  float: left;
+  width: 80px;
+  color: #8e8e8e;
+  margin: 8px 0;
+}
+.contentsWrap.mypage .order li dl dd {
+  float: left;
+  color: #494949;
+  margin: 8px 0;
+}
+.contentsWrap.mypage .order + .btnWrap {
+  padding: 24px 16px;
+}
+
+.contentsWrap.mypage > .footerWrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-top: none;
+}
+.contentsWrap.mypage > .footerWrap > footer {
+  position: relative;
+  width: 100%;
+  /* max-width: 768px; */
+  max-width: 1024px;
+  min-width: 360px;
+  margin: 0 auto;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 16px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #e6e6e6;
+}
+
+.contentsWrap.mypage > .footerWrap > footer button + button {
+  margin-left: 8px;
+}
+
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList .imgWrap {
+  width: 80px;
+  height: 80px;
+  margin: 16px;
+}
+.contentsWrap.mypage .componentWrap.card dl.itemInfo dd.promotion {
+  color: #ff5b00;
+}
+.contentsWrap.mypage .componentWrap.card ul.itemList > li .imgWrap span.label {
+  width: auto;
+  padding: 0 8px;
+  font-size: 10px;
+}
+
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList {
+  padding: 0 16px;
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li {
+  /*padding:14px;*/
+  padding: 0;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+}
+
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList.cancel > li {
+  position: relative;
+  padding-bottom: 56px;
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList.cancel > li > button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #8e8e8e;
+  font-size: 12px;
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li {
+    width: 100%;
+  }
+  .contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li:nth-child(2) {
+    margin-top: 16px;
+  }
+}
+
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li dl.itemInfo {
+  width: calc(100% - 128px);
+  height: 80px;
+  margin-top: 16px;
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li dl.itemInfo dt {
+  height: 1.4em;
+  -webkit-line-clamp: 1;
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li dl.title {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  padding: 16px;
+}
+
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li {
+  margin-top: 16px;
+  font-size: 1.2em;
+  color: #8e8e8e;
+  background-position: 0 50%;
+  padding-left: 24px;
+  background-size: 16px 16px;
+}
+.contentsWrap.mypage section.plan .componentWrap.card.thumbnail ul.itemList > li > ul li {
+  color: #494949;
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li.date {
+  background-image: url("../images/ic_calendar.svg");
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li.bed {
+  background-image: url("../images/ic_bed.svg");
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li.check {
+  background-image: url("../images/ic_check_option.svg");
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li.people {
+  background-image: url("../images/ic_users.svg");
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li.time {
+  background-image: url("../images/ic_clock.svg");
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li.box {
+  background-image: url("../images/ic_box.svg");
+}
+.contentsWrap.mypage .componentWrap.card.thumbnail ul.itemList > li > ul li.car {
+  background-image: url("../images/ic_rentcar.svg");
+}
+
+.contentsWrap.mypage div.policy {
+  padding: 24px 16px;
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+.contentsWrap.mypage section.detail .componentWrap.card.thumbnail ul.itemList {
+  padding: 0;
+}
+.contentsWrap.mypage section.detail > ul > li > .componentWrap.card.thumbnail {
+  margin: 0;
+}
+.contentsWrap.mypage section.detail.cancel > ul > li > .componentWrap.card.thumbnail {
+  margin: 0 0 8px;
+}
+.contentsWrap.mypage section.detail .componentWrap.card.thumbnail ul.itemList + .btnWrap {
+  margin-top: 24px;
+}
+
+.contentsWrap.mypage section.detail.cancel > ul > li:last-child {
+  /*box-shadow:none; margin:0; border-bottom:1px solid #E6E6E6;*/
+}
+.contentsWrap.mypage section.detail.cancel > ul > li:last-child > button {
+  width: 100%;
+  background: url("../images/ic_arrow.svg") 100% 50% no-repeat;
+  text-align: left;
+  color: #8e8e8e;
+  font-size: 1.2em;
+}
+.contentsWrap.mypage section.detail.cancel > ul > li:last-child > button strong {
+  display: block;
+  font-size: 1.2em;
+  color: #363636;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.contentsWrap.mypage section.detail.cancel > ul > li:last-child .btnWrap {
+  margin-top: 24px;
+}
+
+.contentsWrap.mypage section.detail.cancel .cancelWrap {
+  padding: 24px 16px;
+  height: 120px;
+}
+.contentsWrap.mypage section.detail.cancel .cancelWrap p {
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: #363636;
+}
+.contentsWrap.mypage section.detail.cancel .cancelWrap p + p {
+  color: #ff2134;
+  margin-top: 8px;
+}
+
+.contentsWrap.mypage .orderInfo {
+  font-size: 1.4em;
+}
+.contentsWrap.mypage .orderInfo header {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.contentsWrap.mypage .orderInfo dl {
+  overflow: hidden;
+}
+.contentsWrap.mypage .orderInfo dl dt {
+  color: #8e8e8e;
+  width: 96px;
+  clear: both;
+  float: left;
+  margin: 8px 0;
+}
+.contentsWrap.mypage .orderInfo dl dd {
+  color: #494949;
+  float: left;
+  margin: 8px 0;
+}
+/*
+.contentsWrap.mypage li.cost	{}
+.contentsWrap.mypage li.cost li	{padding-bottom:24px; }
+.contentsWrap.mypage li.cost li + li	{padding-top:24px; border-top:1px solid #E6E6E6;}
+.contentsWrap.mypage li.cost header	{color:#222; font-size:1.4em; font-weight:700; margin-bottom:16px;}
+.contentsWrap.mypage li.cost dl	{overflow:hidden;font-size:1.4em; line-height:24px;}
+.contentsWrap.mypage li.cost dl dt	{clear:both; float:left; margin:8px 0; color:#8E8E8E;font-weight:500;}
+.contentsWrap.mypage li.cost dl dt span	{font-weight:400;}
+.contentsWrap.mypage li.cost dl dd	{float:right; margin:8px 0; color:#363636;font-weight:700;}
+.contentsWrap.mypage li.cost dl dd button.delete	{width:24px; height:24px; border:1px solid #D3D3D3; border-radius:2px; background:url("../images/ic_close.svg") 50% 50% no-repeat; background-size:16px 16px; vertical-align:middle; margin-left:8px;}
+.contentsWrap.mypage li.cost > .btnWrap	{margin:8px 0 16px;}
+.contentsWrap.mypage li.cost > .btnWrap button	{width: 328px; margin:0 auto; }
+*/
+
+.contentsWrap.mypage section > .btnWrap {
+  margin: 16px 0;
+}
+.contentsWrap.mypage section > .btnWrap button {
+  width: 328px;
+  margin: 0 auto;
+}
+
+.contentsWrap.mypage div.summary {
+  margin-top: 24px;
+  background: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+}
+.contentsWrap.mypage div.summary > header {
+  padding: 16px 16px 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #363636;
+}
+.contentsWrap.mypage div.summary > footer {
+  padding: 16px;
+  border-top: 1px solid #e6e6e6;
+  font-size: 1.1em;
+  color: #3886f2;
+}
+.contentsWrap.mypage li.amount {
+}
+.contentsWrap.mypage li.amount header dl {
+  display: flex;
+  justify-content: space-between;
+}
+.contentsWrap.mypage li.amount header dl dt {
+  font-size: 1.6em;
+  color: #363636;
+  font-weight: 500;
+}
+.contentsWrap.mypage li.amount header dl dd {
+  font-size: 1.8em;
+  color: #ff5b00;
+  font-weight: 700;
+}
+.contentsWrap.mypage li.amount > dl {
+  font-size: 1.4em;
+  margin-top: 24px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #fafafa;
+  padding: 8px 16px;
+}
+.contentsWrap.mypage li.amount > dl dt {
+  clear: both;
+  float: left;
+  margin: 8px 0;
+  color: #8e8e8e;
+}
+.contentsWrap.mypage li.amount > dl dd {
+  float: right;
+  margin: 8px 0;
+  color: #363636;
+  font-weight: 500;
+}
+
+.contentsWrap.mypage .payInfo {
+  font-size: 1.4em;
+}
+.contentsWrap.mypage .payInfo header {
+  color: #222;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.contentsWrap.mypage .payInfo dl {
+  overflow: hidden;
+}
+.contentsWrap.mypage .payInfo dl dt {
+  color: #8e8e8e;
+  clear: both;
+  float: left;
+  margin: 8px 0;
+}
+.contentsWrap.mypage .payInfo dl dd {
+  color: #494949;
+  float: right;
+  margin: 8px 0;
+}
+.contentsWrap.mypage .payInfo dl dd strong {
+  font-weight: 700;
+}
+.contentsWrap.mypage .payInfo dl + dl {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+.contentsWrap.mypage .payInfo dl dt.cancel {
+  color: #ff2134;
+}
+.contentsWrap.mypage .payInfo dl dt.cancel + dd {
+  color: #ff2134;
+}
+.contentsWrap.mypage .payInfo dl dt.strong {
+  color: #363636;
+}
+.contentsWrap.mypage .payInfo dl + dl dt {
+  color: #363636;
+}
+.contentsWrap.mypage .payInfo dl + dl dd {
+  color: #222;
+}
+
+.contentsWrap.mypage .payInfo > .btnWrap {
+  margin: 16px 0;
+}
+.contentsWrap.mypage .payInfo > .btnWrap button {
+  width: 328px;
+  margin: 0 auto;
+}
+
+.contentsWrap.mypage section.detail > ul > li.policy {
+  padding: 0 16px;
+}
+.contentsWrap.mypage li.policy button {
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  height: 48px;
+  color: #222;
+  font-weight: 700;
+  background: url("../images/ic_arrow.svg") 100% 50% no-repeat;
+}
+
+.contentsWrap.mypage.detail ul.detail > li + li {
+  margin-top: 40px;
+}
+
+.contentsWrap.mypage section.detail.review {
+  padding: 49px 0 64px;
+}
+.contentsWrap.mypage section.detail.review > ul {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 89px);
+}
+.contentsWrap.mypage section.detail.review > ul > li {
+  /*padding:0 16px;*/
+}
+
+.contentsWrap.mypage section.review {
+}
+.contentsWrap.mypage section.detail.review > ul > li.review {
+  flex: 1;
+  padding: 40px 16px;
+}
+.contentsWrap.mypage section.review li.review header {
+  text-align: center;
+  font-size: 1.6em;
+  color: #222;
+  font-weight: 500;
+}
+.contentsWrap.mypage section.review li.review .grade {
+  text-align: center;
+  margin: 16px 0 24px;
+}
+.contentsWrap.mypage section.review li.review .grade img {
+  width: 32px;
+  height: 32px;
+}
+.contentsWrap.mypage section.review ul.imgWrap {
+  width: 100%;
+  display: flex;
+}
+.contentsWrap.mypage section.review ul.imgWrap li {
+  width: calc((100vw - 32px) / 3);
+  min-width: 104px;
+  overflow: hidden;
+  background: url("../images/ic_plus.svg") 50% 50% no-repeat;
+}
+.contentsWrap.mypage section.review ul.imgWrap li + li {
+  margin-left: 8px;
+}
+.contentsWrap.mypage section.review ul.imgWrap div.imgWrap {
+  position: relative;
+  width: 100%;
+  height: calc((100vw - 32px) / 3);
+  max-height: 240px;
+  min-height: 104px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.contentsWrap.mypage section.review ul.imgWrap div.imgWrap > img {
+  width: 100%;
+  object-fit: cover;
+}
+.contentsWrap.mypage section.review ul.imgWrap div.imgWrap > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+}
+.contentsWrap.mypage section.review li.review .input_textarea {
+  background: #fafafa;
+  border-color: #e6e6e6;
+}
+.contentsWrap.mypage section.review li.review > .btn_default {
+  margin: 24px 0;
+}
+.contentsWrap.mypage section.review li.review > .btn_default img {
+  /*filter: brightness(0) invert(.21); width:20px; height:20px;*/
+  margin-right: 4px;
+}
+
+/*내 여행*/
+.contentsWrap.mypage .myOrder {
+  padding: 24px 16px;
+}
+.contentsWrap.mypage .myOrder li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 15px 15px 20px;
+  height: 190px;
+  cursor: pointer;
+  background: url("../images/temp_banner04.png") no-repeat center center;
+  background-size: cover;
+}
+.contentsWrap.mypage .myOrder li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.38;
+  border-radius: 6px;
+  z-index: 1;
+}
+.contentsWrap.mypage .myOrder li + li {
+  margin-top: 1.75rem;
+}
+.contentsWrap.mypage .myOrder li .orderNum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.contentsWrap.mypage .myOrder li .orderNum p {
+  font-size: 1.375rem;
+  letter-spacing: -0.025rem;
+  color: #fff;
+}
+.contentsWrap.mypage .myOrder li .orderNum button {
+  margin-top: 10px;
+  padding: 5px 15px 6px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #fff;
+  border: 1px solid #ff5b00;
+  border-radius: 2px;
+  background: #ff5b00;
+}
+.contentsWrap.mypage .myOrder li .orderInfo {
+  z-index: 2;
+}
+.contentsWrap.mypage .myOrder li .orderInfo p {
+  font-size: 1.375rem;
+  letter-spacing: -0.025rem;
+  color: #fff;
+}
+.contentsWrap.mypage .myOrder li .orderInfo p.calendar {
+  font-size: 1.875rem;
+  margin-bottom: 1.125rem;
+}
+.contentsWrap.mypage section > .myOrder + .btnWrap {
+  padding: 0 16px;
+}
+.contentsWrap.mypage section > .myOrder + .btnWrap button {
+  width: 100%;
+}
+.contentsWrap.mypage .myOrder.type2 li .orderNum button {
+  font-size: 1.5rem;
+  border-color: #fff;
+  background: transparent;
+}
+.contentsWrap.mypage .myOrder.type3 li {
+  padding: 35px 15px;
+}
+.contentsWrap.mypage .myOrder.type3 li .orderdetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+.contentsWrap.mypage .myOrder.type3 li .orderInfo p.calendar {
+  margin-bottom: 0;
+}
+.contentsWrap.mypage .myOrder.type3 li .orderNum {
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.contentsWrap.mypage .myOrder.type3 li .orderNum p + p {
+  display: flex;
+  align-items: center;
+}
+.contentsWrap.mypage .myOrder.type3 li .orderNum p + p:before {
+  content: "";
+  width: 1px;
+  height: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #fff;
+  opacity: 0.4;
+}
+.contentsWrap.mypage .myOrder.type3 li button {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 40px 6px;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  z-index: 2;
+}
+.contentsWrap.mypage .myOrder.type4 li {
+  justify-content: flex-start;
+  padding: 0;
+  height: auto;
+  background: #fff;
+}
+.contentsWrap.mypage .myOrder.type4 li::before {
+  background: none;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderNum {
+  padding: 10px 14px;
+  border: 1px solid #d7d7d7;
+  background: #f1f1f1;
+  border-radius: 4px 4px 0 0;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderNum p {
+  font-size: 1.375rem;
+  color: #363636;
+  font-weight: 500;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderNum p:last-child {
+  font-size: 1.438rem;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderInfo {
+  padding: 20px 14px;
+  border: 1px solid #d7d7d7;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderInfo p + p {
+  margin-top: 1.05rem;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderInfo p span {
+  font-size: 1.375rem;
+  color: #494949;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderInfo p span:first-child {
+  width: 90px;
+  color: #8e8e8e;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderInfo button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  margin: 20px auto 0;
+  padding: 7px 10px 8px;
+  font-size: 1.25rem;
+}
+.contentsWrap.mypage .myOrder.type4 li .orderInfo button:after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  background: url(../images/ic_arrow.svg) center 1px no-repeat;
+  background-size: 100%;
+}

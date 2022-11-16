@@ -1,0 +1,90 @@
+.contentsWrap.account	{}
+.contentsWrap.account > .headerWrap header	{justify-content:center; border-bottom:1px solid #E6E6E6;}
+.contentsWrap.account > .headerWrap header button.btn_back	{position:absolute; top:0; left:0;}
+.contentsWrap.account > section[class*="Container"]	{padding:49px 16px 48px;}
+.contentsWrap.account .inputContainer	{margin-top:24px;}
+.contentsWrap.account .inputContainer > li	{margin-bottom:24px;}
+.contentsWrap.account .inputContainer label:not(.label_checkbox,.label_radio)	{font-size:1.3em; margin-bottom:16px; display:block;}
+.contentsWrap.account .inputContainer p.info	{font-size:1.1em; height:16px; margin-top:8px; color:#FF2134; letter-spacing:0;}
+
+.contentsWrap.account .inputContainer p.title	{margin-bottom:16px;font-size:1.3em;}
+.contentsWrap.account .inputContainer .withBtn	{display:flex;}
+.contentsWrap.account .inputContainer .withBtn input[type="text"]	{width:calc(100% - 98px);}
+.contentsWrap.account .inputContainer .withBtn button	{width:90px; margin-left:8px; border-color:#494949;}
+.contentsWrap.account .inputContainer .required	{color:#FF5B00; margin-left:4px;}
+.contentsWrap.account .dateWrap	{display:flex;}
+.contentsWrap.account .dateWrap select	{flex:1; margin-left:8px;}
+.contentsWrap.account .dateWrap select:first-child	{flex:2; margin-left:0;}
+
+.contentsWrap.account > section > header	{margin:24px 0 32px; text-align:center;}
+.contentsWrap.account > section > header img	{width:120px;}
+
+.contentsWrap.account .infoContainer article strong	{font-weight:500;}
+
+/*	SNS	*/
+	.contentsWrap.account .loginContainer .snsWrap	{border-top:1px solid #E6E6E6; padding-top:24px;}
+	.contentsWrap.account .snsWrap button	{width:100%; height:48px; border:1px solid #E6E6E6; border-radius:4px; color:#363636; font-size:1.4em; position:relative; letter-spacing:-0.04em;}
+	.contentsWrap.account .snsWrap button:not(:last-child)	{margin-bottom:10px;}
+	.contentsWrap.account .snsWrap button:before	{content:""; position:absolute; top:11px; left:18px; width:24px; height:24px; }
+	.contentsWrap.account .snsWrap button.kakao:before	{background-image:url("../images/ic_sns_kakao.svg");}
+	.contentsWrap.account .snsWrap button.naver:before	{background-image:url("../images/ic_sns_naver.svg");}
+	.contentsWrap.account .snsWrap button.facebook:before	{background-image:url("../images/ic_sns_facebook.svg");}	
+
+/*	LOGIN	*/
+
+	section.loginContainer .inputContainer	{margin-bottom:24px;}
+	section.loginContainer .inputContainer input[type="text"]	{margin-bottom:10px;}
+	section.loginContainer .inputContainer input[type="password"]	{margin-bottom:16px;}
+	section.loginContainer .inputContainer button	{margin-bottom:12px;}
+	section.loginContainer .btnWrap	{margin:0 0 24px;}
+	section.loginContainer .btnWrap button	{flex:1;}
+	section.loginContainer .btnWrap button + button	{margin-left:8px;}
+
+
+
+/*	JOIN	*/
+	section.joinContainer > p	{font-size:1.4em; text-align:center; margin:32px 0;}
+	section.joinContainer .policyContainer	{margin:40px 0;}
+	section.joinContainer .policyContainer > header	{font-size:1.3em; margin-bottom:16px;}
+	section.joinContainer .policyContainer > .btn_default	{border-color:#D3D3D3;}
+	section.joinContainer .policyContainer > .btn_default.on	{border-color:#FF5B00; color:#FF5B00;}
+	section.joinContainer .policyContainer ul li	{display:flex; align-items:center; justify-content:space-between; margin-top:16px;}
+	section.joinContainer .policyContainer ul li span	{vertical-align:baseline; margin-left:4px; color:#ABABAB; font-size:1.3em; margin-top:3px;}
+	section.joinContainer .policyContainer ul li span.required	{color:#FF5B00;}
+	section.joinContainer .policyContainer ul li a	{font-size:1.2em; color:#8E8E8E;}
+	section.joinContainer .policyContainer ul li a:hover	{text-decoration:underline;}
+
+
+/*	PROFILE	*/
+	section.profileContainer	{}
+	section.profileContainer > header	{text-align:center; border-bottom:1px solid #E6E6E6; padding:24px 0;}
+	section.profileContainer > header img	{height:100px;}
+	section.profileContainer > header dl	{margin-top:24px;}
+	section.profileContainer > header dl dt	{font-size:1.5em; font-weight:500; margin-bottom:4px;}
+	section.profileContainer > header dl dd	{color:#494949; font-size:1.3em; line-height:1.5;}
+	section.profileContainer .profilePhotoWrap	{position:relative; width:fit-content;cursor:pointer;}
+	section.profileContainer .profilePhotoWrap .profilePhoto	{width:64px; height:64px; border-radius:50%; border:1px solid #E6E6E6; background:#F5F5F5 url("../images/ic_user.svg") 50% 50% no-repeat; overflow:hidden; display:flex; justify-content:center; align-items:center; }
+	section.profileContainer .profilePhotoWrap .profilePhoto img	{width:100%;}
+	section.profileContainer .profilePhotoWrap > p	{width:24px; height:24px; background:#222; border-radius:50%; position:absolute; right:0; bottom:0; display:flex; justify-content:center; align-items:center;}
+	section.profileContainer .profilePhotoWrap > p > img	{width:16px; height:16px; filter: brightness(0) invert(1);}
+	section.profileContainer .inputContainer	{margin-bottom:40px;}
+
+/*	MYINFO	*/
+	.contentsWrap.account > section[class*="Container"].info	{padding-bottom:24px;}
+	section.profileContainer.info .profilePhotoWrap	{margin:0 auto;}
+	section.profileContainer.info .inputContainer li	{position:relative;}
+	section.profileContainer.info .pwchange	{position:absolute; top:29px; right:0; height:40px; padding:0 16px;}
+	section.profileContainer.info .policyContainer li + li	{margin-top:8px;}
+	section.profileContainer.info .btnWrap	{justify-content:flex-end; margin-top:32px;}
+	section.profileContainer.info .btnWrap button	{background:url("../images/ic_arrow.svg") 100% 6px no-repeat; padding-right:16px; background-size:12px 12px; color:#8E8E8E;}
+
+/*	PWSEARCH	*/
+	section.pwsearchContainer > header	{margin:40px 0; text-align:center; font-size:1.3em; line-height:1.5;}
+	section.pwsearchContainer input[type="text"]	{margin-bottom:32px;}
+
+/*	PWCHANGE	*/
+	.contentsWrap.account .pwChangeContainer .inputContainer > li p.info	{/*color:#BEBEBE*/}
+
+/*	REST / WITHDRAW	*/
+	.contentsWrap.account .infoContainer header	{font-size:1.5em; font-weight:500; margin-top:24px;}
+	.contentsWrap.account .infoContainer article	{font-size:1.3em; line-height:1.5; margin:48px 0 112px;}

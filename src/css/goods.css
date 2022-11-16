@@ -1,0 +1,45 @@
+.contentsWrap.pages	{}
+.contentsWrap.pages > .headerWrap header	{justify-content:center; border-bottom:1px solid #E6E6E6;}
+.contentsWrap.pages > .headerWrap header h1	{}
+.contentsWrap.pages > .headerWrap header button.btn_back	{position:absolute; top:0; left:0;}
+
+.contentsWrap.pages > section.policy	{padding:64px 16px 24px; height:100vh; color:#494949; overflow-y:scroll; font-size:1.2em; line-height:1.6; text-align:justify;}
+.contentsWrap.pages > section.policy h2, .contentsWrap.pages > section h3	{font-weight:500; margin:4px 0;}
+.contentsWrap.pages > section.policy p	{margin-bottom:4px;}
+.contentsWrap.pages > section.policy li	{padding-left:8px;}
+.contentsWrap.pages > section.policy > ol > li	{margin:8px 0;}
+
+
+section.goodsList	{font-size:1rem;}
+section.goodsList	{}
+section.goodsList > header	{}
+section.goodsList > .componentWrap > article	{width:100%;}
+section.goodsList:not(.sub) > .componentWrap	{margin:24px 0;}
+
+
+
+/*	GOODSLIST - SUB*/
+section.goodsList.sub	{}
+section.goodsList.sub .componentWrap.menu.tab ul.itemList	{border-top:none;}
+
+section.goodsList.sub .componentWrap.menu.icon	{margin-top:24px;}
+section.goodsList.sub .componentWrap.menu.icon + .componentWrap.menu.tab	{margin-top:24px; border-top:1px solid #e6e6e6}
+/*	NONE	*/
+div.none	{text-align:center; height:calc(100vh - 49px); display:flex; flex-direction:column; justify-content:center; align-items:center;}
+div.none img	{width:50px; height:50px; /*-webkit-filter:brightness(390%);*/}
+div.none dl	{font-size:1rem; margin-bottom:144px; line-height:1.5; margin-top:12px;}
+div.none dt	{font-size:1.6em; font-weight:500; color:#363636;}
+div.none dd	{font-size:1.3em; color:#8E8E8E; margin-top:6px;}
+
+
+/*	card.thumbnail - wish	*/
+.componentWrap.card.thumbnail.wish ul.itemList > li .imgWrap	{width:140px; height:140px; margin-right:0; border-radius:4px 0 0 4px;}
+.componentWrap.card.thumbnail.wish ul.itemList > li dl	{width: calc(100% - 140px); height:140px; border:1px solid #E6E6E6; border-left:none; border-radius:0 4px 4px 0; padding:8px 16px;}
+.componentWrap.card.thumbnail.wish button.delete	{position:absolute; top:0; right:16px; width:48px; height:48px; cursor:pointer; background:url("../images/ic_close.svg") 50% 50% no-repeat;}
+.componentWrap.card.thumbnail.wish ul.itemList > li dl dt	{padding-right:32px; margin-bottom:8px;}
+	@media all and (min-width: 768px)	{
+		.componentWrap.card.thumbnail.wish ul.itemList > li	{width:100%;}
+		.componentWrap.card.thumbnail.wish ul.itemList > li:nth-child(2)	{margin-top:16px;}
+	}
+
+

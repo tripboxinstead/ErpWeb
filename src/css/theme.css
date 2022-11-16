@@ -1,0 +1,1364 @@
+/*	TEMP - TEST	*/
+.previewWrap {
+  z-index: 10;
+  position: fixed;
+  background-color: #fff;
+  bottom: 16px;
+  right: 16px;
+  padding: 8px;
+  width: 120px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+.previewWrap > ul {
+}
+.previewWrap p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.previewWrap > ul > li {
+  padding: 8px 0;
+}
+.previewWrap > ul > li + li {
+  border-top: 1px solid #eee;
+}
+.previewWrap > ul > li > ul > li {
+  padding: 8px;
+  cursor: pointer;
+}
+.previewWrap li.on {
+  color: #0292fe;
+  font-weight: 700;
+}
+.previewWrap li.on:before {
+  content: "→";
+  display: inline-block;
+}
+
+/*	FONT	*/
+body.style_font_malgunGothic {
+  font-family: "맑은고딕", "MalgunGothic", sans-serif;
+}
+body.style_font_nanumSquare {
+  font-family: "NanumSquare", sans-serif;
+}
+body.style_font_nanumPen {
+  font-family: "Nanum Pen Script", cursive;
+}
+/*  FONT_newType  */
+body.style_font_malgunGothic .footerWrap.newType .footerContainer .copy {
+  font-family: "맑은고딕", "MalgunGothic", sans-serif;
+}
+body.style_font_nanumSquare .footerWrap.newType .footerContainer .copy {
+  font-family: "NanumSquare", sans-serif;
+}
+body.style_font_nanumPen .footerWrap.newType .footerContainer .copy {
+  font-family: "Nanum Pen Script", cursive;
+}
+body.style_font_malgunGothic .footerWrap.newType .footerContainer .logo {
+  font-family: "맑은고딕", "MalgunGothic", sans-serif;
+}
+body.style_font_nanumSquare .footerWrap.newType .footerContainer .logo {
+  font-family: "NanumSquare", sans-serif;
+}
+body.style_font_nanumPen .footerWrap.newType .footerContainer .logo {
+  font-family: "Nanum Pen Script", cursive;
+}
+body.style_font_malgunGothic .footerWrap.newType.type2 .footerContainer .custom li.phone p.num {
+  font-family: "맑은고딕", "MalgunGothic", sans-serif;
+}
+body.style_font_nanumSquare .footerWrap.newType.type2 .footerContainer .custom li.phone p.num {
+  font-family: "NanumSquare", sans-serif;
+}
+body.style_font_nanumPen .footerWrap.newType.type2 .footerContainer .custom li.phone p.num {
+  font-family: "Nanum Pen Script", cursive;
+}
+ody.style_font_malgunGothic .footerWrap.newType.type3 .footerContainer .custom li.phone p.num {
+  font-family: "맑은고딕", "MalgunGothic", sans-serif;
+}
+body.style_font_nanumSquare .footerWrap.newType.type3 .footerContainer .custom li.phone p.num {
+  font-family: "NanumSquare", sans-serif;
+}
+body.style_font_nanumPen .footerWrap.newType.type3 .footerContainer .custom li.phone p.num {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+/*	COLOR - BLUE	*/
+body.style_color_blue .input_checkbox:checked + .label_checkbox:before {
+  border-color: #3886f2;
+  background-color: #3886f2;
+}
+body.style_color_blue .input_radio:checked + .label_radio:before {
+  border-color: #3886f2;
+}
+body.style_color_blue .input_radio:checked + .label_radio:after {
+  background-color: #3886f2;
+}
+body.style_color_blue button[class*="btn_"].color {
+  color: #3886f2;
+  border-color: #3886f2;
+}
+body.style_color_blue button.btn_solid.color {
+  color: #fff;
+  background-color: #3886f2;
+}
+body.style_color_blue button.text,
+body.style_color_blue .contentsWrap.account .inputContainer .required {
+  color: #3886f2;
+}
+body.style_color_blue section.joinContainer .policyContainer > .btn_default.on {
+  border-color: #3886f2;
+  color: #3886f2;
+}
+body.style_color_blue section.joinContainer .policyContainer ul li span.required {
+  color: #3886f2;
+}
+body.style_color_blue .contentsWrap.detail:not(.pages, .cart, .mypage) button.wish.on svg path {
+  fill: #3886f2;
+}
+body.style_color_blue .contentsWrap.detail > section > header dd.place button,
+body.style_color_blue .contentsWrap.detail dl.title dd.option,
+body.style_color_blue .contentsWrap.detail .productWrap > li > ul > li > dl + dl dd,
+body.style_color_blue .contentsWrap.detail .airWrap > header,
+body.style_color_blue .contentsWrap.detail .detailWrap > ul > li header dl dd,
+body.style_color_blue ul.detail > li > header h2 span {
+  color: #3886f2;
+}
+body.style_color_blue .contentsWrap.detail > section > header dd.keyword span {
+  color: #3886f2;
+  background-color: #eff5fe;
+}
+body.style_color_blue .contentsWrap.detail .productWrap > li > ul > li > dl dt button.select {
+  border-color: #3886f2;
+  color: #3886f2;
+}
+body.style_color_blue .contentsWrap.detail .summaryWrap > ul > li:before,
+body.style_color_blue .contentsWrap.detail .detailWrap > ul > li header:before,
+body.style_color_blue .contentsWrap.detail .detailWrap .swiperdot button.on {
+  background-color: #3886f2;
+}
+body.style_color_blue .popup.map .date button.on {
+  background-color: #3886f2;
+  border-color: #3886f2;
+}
+body.style_color_blue .contentsWrap.detail section.popup.calendar > header .btnDuring > div p {
+  color: #3886f2;
+}
+body.style_color_blue .contentsWrap.detail section.popup.calendar > article > div .calDate button.today p {
+  border-color: #3886f2;
+}
+body.style_color_blue .contentsWrap.detail section.popup.calendar > article > div .calDate button.on {
+  background-color: #eff5fe;
+}
+body.style_color_blue .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.start p,
+body.style_color_blue .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.end p {
+  background-color: #3886f2;
+}
+body.style_color_blue .contentsWrap.cart section.travelers dl.orderInfo dd .inputWrap > button.on,
+body.style_color_blue .contentsWrap.cart div.travelers button.add,
+body.style_color_blue .contentsWrap.cart li.policy > .btn_default.on {
+  color: #3886f2;
+  border-color: #3886f2;
+}
+body.style_color_blue li.cost dl dd.price,
+dy.style_color_blue .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion,
+body.style_color_blue .contentsWrap.cart li.amount header dl dd,
+body.style_color_blue .contentsWrap.cart li.policy ul li span.required,
+body.style_color_blue .contentsWrap.mypage > .headerWrap > ul li.on p,
+body.style_color_blue .contentsWrap.mypage .componentWrap.card dl.itemInfo dd.promotion,
+body.style_color_blue .contentsWrap.mypage li.amount header dl dd,
+body.style_color_blue .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion {
+  color: #3886f2;
+}
+
+body.style_color_blue .contentsWrap.cart dl.orderInfo dd .componentWrap.menu.category.wrap ul.itemList li.on {
+  background-color: #eff5fe;
+  color: #3886f2;
+}
+body.style_color_blue .contentsWrap.cart div.travelers button.on {
+  border-color: #3886f2;
+  background-color: #3886f2;
+  color: #fff;
+}
+body.style_color_blue .contentsWrap.mypage > .headerWrap > ul li.on:after {
+  background-color: #3886f2;
+}
+body.style_color_blue .contentsWrap.board > .headerWrap > ul li.on {
+  border-bottom-color: #3886f2;
+}
+body.style_color_blue .contentsWrap.board > .headerWrap > ul li:hover p,
+body.style_color_blue .contentsWrap.board > .headerWrap > ul li.on p,
+body.style_color_blue .contentsWrap.board ul.list li dt span.on,
+body.style_color_blue .contentsWrap.board ul.list li dd.category,
+body.style_color_blue .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_blue .contentsWrap.board.read section.cs li.reply > header,
+body.style_color_blue .contentsWrap.board ul.list li dd.category,
+body.style_color_blue .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_blue .contentsWrap.board.read section.cs li.reply > header {
+  color: #3886f2;
+}
+
+body.style_color_blue .asideWrap aside .asideContainer.login .linkWrap button span {
+  background-color: #3886f2;
+}
+body.style_color_blue .componentWrap.nav li:hover {
+  background-color: #eff5fe;
+  color: #3886f2;
+}
+body.style_color_blue .componentWrap.nav li.on,
+body.style_color_blue .componentWrap.nav.sub li p.on,
+body.style_color_blue .searchWrap .searchContainer > .popularword ol li:before {
+  color: #3886f2;
+}
+body.style_color_blue .componentWrap.nav.circle li:hover .imgWrap:after {
+  border-color: #3886f2;
+}
+body.style_color_blue .componentWrap.card ul.itemList > li .imgWrap span.label {
+  background-color: #3886f2;
+}
+body.style_color_blue .componentWrap.card dl.itemInfo dd.keyword span {
+  color: #3886f2;
+  background-color: #eff5fe;
+}
+body.style_color_blue .componentWrap.card dl.itemInfo dd.priceWrap .state span.ing {
+  background-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu ul.itemList li.on p {
+  color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu ul.itemList li:hover p {
+  color: #3886f2;
+}
+body.style_color_blue .componentWrap.card.ratio.inside dl dd {
+  background: #3886f2;
+}
+body.style_color_blue .componentWrap.card.extend.inside .dimmed dd.label {
+  background: #3886f2;
+}
+body.style_color_blue .componentWrap.card.circle dl.itemInfo dd.label {
+  background: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.tab ul.itemList li.on p {
+  color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.tab ul.itemList li.on {
+  border-bottom-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.square.extend ul.itemList li.on {
+  border-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.square.wrap ul.itemList li.on {
+  border-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.circle.extend ul.itemList li.on:after {
+  border-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.circle.wrap ul.itemList li.on:after {
+  border-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.category.extend ul.itemList li.on {
+  background: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.category.extend ul.itemList li:hover:not(.on) {
+  color: #3886f2;
+  background: #eff5fe;
+}
+body.style_color_blue .componentWrap.menu.category.wrap ul.itemList li.on {
+  background: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.category.wrap ul.itemList li:hover:not(.on) {
+  color: #3886f2;
+  background: #eff5fe;
+}
+body.style_color_blue .componentWrap.menu.tag.extend ul.itemList li.on {
+  background: #3886f2;
+  border-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.tag.extend ul.itemList li:hover:not(.on) {
+  color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.tag.wrap ul.itemList li.on {
+  background: #3886f2;
+  border-color: #3886f2;
+}
+body.style_color_blue .componentWrap.menu.tag.wrap ul.itemList li:hover:not(.on) {
+  color: #3886f2;
+}
+body.style_color_blue .componentWrap.board dl.boardList dd {
+  color: #3886f2;
+}
+
+body.style_color_blue .popupContainer[class*="Alert"] .popupContents > p:before {
+  background-color: #3886f2;
+}
+
+body.style_color_blue .contentsWrap.cart div.travelers button.add:not(.on) img,
+body.style_color_blue .contentsWrap.board ul.list li dt span.on img,
+body.style_color_blue .contentsWrap.board.read section.cs li.reply > header img,
+body.style_color_blue .componentWrap.nav li:hover a > img,
+body.style_color_blue .componentWrap.nav li.on a > img,
+body.style_color_blue .componentWrap.nav.sub li:hover img,
+body.style_color_blue .contentsWrap.detail > section > header dd.place button img,
+body.style_color_blue .contentsWrap.detail .detailWrap > ul > li header dl dd img,
+body.style_color_blue .contentsWrap.detail .detailWrap .detailmessage article header img,
+body.style_color_blue .contentsWrap.detail .airWrap > header img,
+body.style_color_blue .loadingContainer img {
+  filter: invert(43%) sepia(86%) saturate(2425%) hue-rotate(200deg) brightness(101%) contrast(90%);
+} /* #3886F2	*/
+
+/*	COLOR - RED	*/
+body.style_color_red .input_checkbox:checked + .label_checkbox:before {
+  border-color: #ff2134;
+  background-color: #ff2134;
+}
+body.style_color_red .input_radio:checked + .label_radio:before {
+  border-color: #ff2134;
+}
+body.style_color_red .input_radio:checked + .label_radio:after {
+  background-color: #ff2134;
+}
+body.style_color_red button[class*="btn_"].color {
+  color: #ff2134;
+  border-color: #ff2134;
+}
+body.style_color_red button.btn_solid.color {
+  color: #fff;
+  background-color: #ff2134;
+}
+body.style_color_red button.text,
+body.style_color_red .contentsWrap.account .inputContainer .required {
+  color: #ff2134;
+}
+body.style_color_red section.joinContainer .policyContainer > .btn_default.on {
+  border-color: #ff2134;
+  color: #ff2134;
+}
+body.style_color_red section.joinContainer .policyContainer ul li span.required {
+  color: #ff2134;
+}
+body.style_color_red .contentsWrap.detail:not(.pages, .cart, .mypage) button.wish.on svg path {
+  fill: #ff2134;
+}
+body.style_color_red .contentsWrap.detail > section > header dd.place button,
+body.style_color_red .contentsWrap.detail dl.title dd.option,
+body.style_color_red .contentsWrap.detail .productWrap > li > ul > li > dl + dl dd,
+body.style_color_red .contentsWrap.detail .airWrap > header,
+body.style_color_red .contentsWrap.detail .detailWrap > ul > li header dl dd,
+body.style_color_red ul.detail > li > header h2 span {
+  color: #ff2134;
+}
+body.style_color_red .contentsWrap.detail > section > header dd.keyword span {
+  color: #ff2134;
+  background-color: #ffedef;
+}
+body.style_color_red .contentsWrap.detail .productWrap > li > ul > li > dl dt button.select {
+  border-color: #ff2134;
+  color: #ff2134;
+}
+body.style_color_red .contentsWrap.detail .summaryWrap > ul > li:before,
+body.style_color_red .contentsWrap.detail .detailWrap > ul > li header:before,
+body.style_color_red .contentsWrap.detail .detailWrap .swiperdot button.on {
+  background-color: #ff2134;
+}
+body.style_color_red .popup.map .date button.on {
+  background-color: #ff2134;
+  border-color: #ff2134;
+}
+body.style_color_red .contentsWrap.detail section.popup.calendar > header .btnDuring > div p {
+  color: #ff2134;
+}
+body.style_color_red .contentsWrap.detail section.popup.calendar > article > div .calDate button.today p {
+  border-color: #ff2134;
+}
+body.style_color_red .contentsWrap.detail section.popup.calendar > article > div .calDate button.on {
+  background-color: #ffedef;
+}
+body.style_color_red .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.start p,
+body.style_color_red .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.end p {
+  background-color: #ff2134;
+}
+body.style_color_red .contentsWrap.cart section.travelers dl.orderInfo dd .inputWrap > button.on,
+body.style_color_red .contentsWrap.cart div.travelers button.add,
+body.style_color_red .contentsWrap.cart li.policy > .btn_default.on {
+  color: #ff2134;
+  border-color: #ff2134;
+}
+body.style_color_red li.cost dl dd.price,
+dy.style_color_red .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion,
+body.style_color_red .contentsWrap.cart li.amount header dl dd,
+body.style_color_red .contentsWrap.cart li.policy ul li span.required,
+body.style_color_red .contentsWrap.mypage > .headerWrap > ul li.on p,
+body.style_color_red .contentsWrap.mypage .componentWrap.card dl.itemInfo dd.promotion,
+body.style_color_red .contentsWrap.mypage li.amount header dl dd,
+body.style_color_red .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion {
+  color: #ff2134;
+}
+body.style_color_red .contentsWrap.cart dl.orderInfo dd .componentWrap.menu.category.wrap ul.itemList li.on {
+  background-color: #ffedef;
+  color: #ff2134;
+}
+body.style_color_red .contentsWrap.cart div.travelers button.on {
+  border-color: #ff2134;
+  background-color: #ff2134;
+  color: #fff;
+}
+body.style_color_red .contentsWrap.mypage > .headerWrap > ul li.on:after {
+  background-color: #ff2134;
+}
+body.style_color_red .contentsWrap.board > .headerWrap > ul li.on {
+  border-bottom-color: #ff2134;
+}
+body.style_color_red .contentsWrap.board > .headerWrap > ul li:hover p,
+body.style_color_red .contentsWrap.board > .headerWrap > ul li.on p,
+body.style_color_red .contentsWrap.board ul.list li dt span.on,
+body.style_color_red .contentsWrap.board ul.list li dd.category,
+body.style_color_red .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_red .contentsWrap.board.read section.cs li.reply > header,
+body.style_color_red .contentsWrap.board ul.list li dd.category,
+body.style_color_red .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_red .contentsWrap.board.read section.cs li.reply > header {
+  color: #ff2134;
+}
+
+body.style_color_red .asideWrap aside .asideContainer.login .linkWrap button span {
+  background-color: #ff2134;
+}
+body.style_color_red .componentWrap.nav li:hover {
+  background-color: #ffedef;
+  color: #ff2134;
+}
+body.style_color_red .componentWrap.nav li.on,
+body.style_color_red .componentWrap.nav.sub li p.on,
+body.style_color_red .searchWrap .searchContainer > .popularword ol li:before {
+  color: #ff2134;
+}
+body.style_color_red .componentWrap.nav.circle li:hover .imgWrap:after {
+  border-color: #ff2134;
+}
+body.style_color_red .componentWrap.card ul.itemList > li .imgWrap span.label {
+  background-color: #ff2134;
+}
+body.style_color_red .componentWrap.card dl.itemInfo dd.keyword span {
+  color: #ff2134;
+  background-color: #ffedef;
+}
+body.style_color_red .componentWrap.card dl.itemInfo dd.priceWrap .state span.ing {
+  background-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu ul.itemList li.on p {
+  color: #ff2134;
+}
+body.style_color_red .componentWrap.menu ul.itemList li:hover p {
+  color: #ff2134;
+}
+body.style_color_red .componentWrap.card.ratio.inside dl dd {
+  background: #ff2134;
+}
+body.style_color_red .componentWrap.card.extend.inside .dimmed dd.label {
+  background: #ff2134;
+}
+body.style_color_red .componentWrap.card.circle dl.itemInfo dd.label {
+  background: #ff2134;
+}
+body.style_color_red .componentWrap.menu.tab ul.itemList li.on p {
+  color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.tab ul.itemList li.on {
+  border-bottom-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.square.extend ul.itemList li.on {
+  border-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.square.wrap ul.itemList li.on {
+  border-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.circle.extend ul.itemList li.on:after {
+  border-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.circle.wrap ul.itemList li.on:after {
+  border-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.category.extend ul.itemList li.on {
+  background: #ff2134;
+}
+body.style_color_red .componentWrap.menu.category.extend ul.itemList li:hover:not(.on) {
+  color: #ff2134;
+  background: #ffedef;
+}
+body.style_color_red .componentWrap.menu.category.wrap ul.itemList li.on {
+  background: #ff2134;
+}
+body.style_color_red .componentWrap.menu.category.wrap ul.itemList li:hover:not(.on) {
+  color: #ff2134;
+  background: #ffedef;
+}
+body.style_color_red .componentWrap.menu.tag.extend ul.itemList li.on {
+  background: #ff2134;
+  border-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.tag.extend ul.itemList li:hover:not(.on) {
+  color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.tag.wrap ul.itemList li.on {
+  background: #ff2134;
+  border-color: #ff2134;
+}
+body.style_color_red .componentWrap.menu.tag.wrap ul.itemList li:hover:not(.on) {
+  color: #ff2134;
+}
+body.style_color_red .componentWrap.board dl.boardList dd {
+  color: #ff2134;
+}
+
+body.style_color_red .popupContainer[class*="Alert"] .popupContents > p:before {
+  background-color: #ff2134;
+}
+
+body.style_color_red .contentsWrap.cart div.travelers button.add:not(.on) img,
+body.style_color_red .contentsWrap.board ul.list li dt span.on img,
+body.style_color_red .contentsWrap.board.read section.cs li.reply > header img,
+body.style_color_red .componentWrap.nav li:hover a > img,
+body.style_color_red .componentWrap.nav li.on a > img,
+body.style_color_red .componentWrap.nav.sub li:hover img,
+body.style_color_red .contentsWrap.detail > section > header dd.place button img,
+body.style_color_red .contentsWrap.detail .detailWrap > ul > li header dl dd img,
+body.style_color_red .contentsWrap.detail .detailWrap .detailmessage article header img,
+body.style_color_red .contentsWrap.detail .airWrap > header img,
+body.style_color_red .loadingContainer img {
+  filter: invert(36%) sepia(65%) saturate(6321%) hue-rotate(339deg) brightness(100%) contrast(116%);
+} /* #FF2134	*/
+
+/*	COLOR - PURPLE	*/
+body.style_color_purple .input_checkbox:checked + .label_checkbox:before {
+  border-color: #7d44ff;
+  background-color: #7d44ff;
+}
+body.style_color_purple .input_radio:checked + .label_radio:before {
+  border-color: #7d44ff;
+}
+body.style_color_purple .input_radio:checked + .label_radio:after {
+  background-color: #7d44ff;
+}
+body.style_color_purple button[class*="btn_"].color {
+  color: #7d44ff;
+  border-color: #7d44ff;
+}
+body.style_color_purple button.btn_solid.color {
+  color: #fff;
+  background-color: #7d44ff;
+}
+body.style_color_purple button.text,
+body.style_color_purple .contentsWrap.account .inputContainer .required {
+  color: #7d44ff;
+}
+body.style_color_purple section.joinContainer .policyContainer > .btn_default.on {
+  border-color: #7d44ff;
+  color: #7d44ff;
+}
+body.style_color_purple section.joinContainer .policyContainer ul li span.required {
+  color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.detail:not(.pages, .cart, .mypage) button.wish.on svg path {
+  fill: #7d44ff;
+}
+body.style_color_purple .contentsWrap.detail > section > header dd.place button,
+body.style_color_purple .contentsWrap.detail dl.title dd.option,
+body.style_color_purple .contentsWrap.detail .productWrap > li > ul > li > dl + dl dd,
+body.style_color_purple .contentsWrap.detail .airWrap > header,
+body.style_color_purple .contentsWrap.detail .detailWrap > ul > li header dl dd,
+body.style_color_purple ul.detail > li > header h2 span {
+  color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.detail > section > header dd.keyword span {
+  color: #7d44ff;
+  background-color: #f5f0ff;
+}
+body.style_color_purple .contentsWrap.detail .productWrap > li > ul > li > dl dt button.select {
+  border-color: #7d44ff;
+  color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.detail .summaryWrap > ul > li:before,
+body.style_color_purple .contentsWrap.detail .detailWrap > ul > li header:before,
+body.style_color_purple .contentsWrap.detail .detailWrap .swiperdot button.on {
+  background-color: #7d44ff;
+}
+body.style_color_purple .popup.map .date button.on {
+  background-color: #7d44ff;
+  border-color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.detail section.popup.calendar > header .btnDuring > div p {
+  color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.detail section.popup.calendar > article > div .calDate button.today p {
+  border-color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.detail section.popup.calendar > article > div .calDate button.on {
+  background-color: #f5f0ff;
+}
+body.style_color_purple .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.start p,
+body.style_color_purple .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.end p {
+  background-color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.cart section.travelers dl.orderInfo dd .inputWrap > button.on,
+body.style_color_purple .contentsWrap.cart div.travelers button.add,
+body.style_color_purple .contentsWrap.cart li.policy > .btn_default.on {
+  color: #7d44ff;
+  border-color: #7d44ff;
+}
+body.style_color_purple li.cost dl dd.price,
+dy.style_color_purple .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion,
+body.style_color_purple .contentsWrap.cart li.amount header dl dd,
+body.style_color_purple .contentsWrap.cart li.policy ul li span.required,
+body.style_color_purple .contentsWrap.mypage > .headerWrap > ul li.on p,
+body.style_color_purple .contentsWrap.mypage .componentWrap.card dl.itemInfo dd.promotion,
+body.style_color_purple .contentsWrap.mypage li.amount header dl dd,
+body.style_color_purple .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion {
+  color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.cart dl.orderInfo dd .componentWrap.menu.category.wrap ul.itemList li.on {
+  background-color: #f5f0ff;
+  color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.cart div.travelers button.on {
+  border-color: #7d44ff;
+  background-color: #7d44ff;
+  color: #fff;
+}
+body.style_color_purple .contentsWrap.mypage > .headerWrap > ul li.on:after {
+  background-color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.board > .headerWrap > ul li.on {
+  border-bottom-color: #7d44ff;
+}
+body.style_color_purple .contentsWrap.board > .headerWrap > ul li:hover p,
+body.style_color_purple .contentsWrap.board > .headerWrap > ul li.on p,
+body.style_color_purple .contentsWrap.board ul.list li dt span.on,
+body.style_color_purple .contentsWrap.board ul.list li dd.category,
+body.style_color_purple .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_purple .contentsWrap.board.read section.cs li.reply > header,
+body.style_color_purple .contentsWrap.board ul.list li dd.category,
+body.style_color_purple .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_purple .contentsWrap.board.read section.cs li.reply > header {
+  color: #7d44ff;
+}
+
+body.style_color_purple .asideWrap aside .asideContainer.login .linkWrap button span {
+  background-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.nav li:hover {
+  background-color: #f5f0ff;
+  color: #7d44ff;
+}
+body.style_color_purple .componentWrap.nav li.on,
+body.style_color_purple .componentWrap.nav.sub li p.on,
+body.style_color_purple .searchWrap .searchContainer > .popularword ol li:before {
+  color: #7d44ff;
+}
+body.style_color_purple .componentWrap.nav.circle li:hover .imgWrap:after {
+  border-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.card ul.itemList > li .imgWrap span.label {
+  background-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.card dl.itemInfo dd.keyword span {
+  color: #7d44ff;
+  background-color: #f5f0ff;
+}
+body.style_color_purple .componentWrap.card dl.itemInfo dd.priceWrap .state span.ing {
+  background-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu ul.itemList li.on p {
+  color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu ul.itemList li:hover p {
+  color: #7d44ff;
+}
+body.style_color_purple .componentWrap.card.ratio.inside dl dd {
+  background: #7d44ff;
+}
+body.style_color_purple .componentWrap.card.extend.inside .dimmed dd.label {
+  background: #7d44ff;
+}
+body.style_color_purple .componentWrap.card.circle dl.itemInfo dd.label {
+  background: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.tab ul.itemList li.on p {
+  color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.tab ul.itemList li.on {
+  border-bottom-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.square.extend ul.itemList li.on {
+  border-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.square.wrap ul.itemList li.on {
+  border-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.circle.extend ul.itemList li.on:after {
+  border-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.circle.wrap ul.itemList li.on:after {
+  border-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.category.extend ul.itemList li.on {
+  background: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.category.extend ul.itemList li:hover:not(.on) {
+  color: #7d44ff;
+  background: #f5f0ff;
+}
+body.style_color_purple .componentWrap.menu.category.wrap ul.itemList li.on {
+  background: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.category.wrap ul.itemList li:hover:not(.on) {
+  color: #7d44ff;
+  background: #f5f0ff;
+}
+body.style_color_purple .componentWrap.menu.tag.extend ul.itemList li.on {
+  background: #7d44ff;
+  border-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.tag.extend ul.itemList li:hover:not(.on) {
+  color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.tag.wrap ul.itemList li.on {
+  background: #7d44ff;
+  border-color: #7d44ff;
+}
+body.style_color_purple .componentWrap.menu.tag.wrap ul.itemList li:hover:not(.on) {
+  color: #7d44ff;
+}
+body.style_color_purple .componentWrap.board dl.boardList dd {
+  color: #7d44ff;
+}
+
+body.style_color_purple .popupContainer[class*="Alert"] .popupContents > p:before {
+  background-color: #7d44ff;
+}
+
+body.style_color_purple .contentsWrap.cart div.travelers button.add:not(.on) img,
+body.style_color_purple .contentsWrap.board ul.list li dt span.on img,
+body.style_color_purple .contentsWrap.board.read section.cs li.reply > header img,
+body.style_color_purple .componentWrap.nav li:hover a > img,
+body.style_color_purple .componentWrap.nav li.on a > img,
+body.style_color_purple .componentWrap.nav.sub li:hover img,
+body.style_color_purple .contentsWrap.detail > section > header dd.place button img,
+body.style_color_purple .contentsWrap.detail .detailWrap > ul > li header dl dd img,
+body.style_color_purple .contentsWrap.detail .detailWrap .detailmessage article header img,
+body.style_color_purple .contentsWrap.detail .airWrap > header img,
+body.style_color_purple .loadingContainer img {
+  filter: invert(43%) sepia(79%) saturate(6224%) hue-rotate(247deg) brightness(99%) contrast(104%);
+} /* #7D44FF	*/
+
+/*	COLOR - GREEN	*/
+body.style_color_green .input_checkbox:checked + .label_checkbox:before {
+  border-color: #00a357;
+  background-color: #00a357;
+}
+body.style_color_green .input_radio:checked + .label_radio:before {
+  border-color: #00a357;
+}
+body.style_color_green .input_radio:checked + .label_radio:after {
+  background-color: #00a357;
+}
+body.style_color_green button[class*="btn_"].color {
+  color: #00a357;
+  border-color: #00a357;
+}
+body.style_color_green button.btn_solid.color {
+  color: #fff;
+  background-color: #00a357;
+}
+body.style_color_green button.text,
+body.style_color_green .contentsWrap.account .inputContainer .required {
+  color: #00a357;
+}
+body.style_color_green section.joinContainer .policyContainer > .btn_default.on {
+  border-color: #00a357;
+  color: #00a357;
+}
+body.style_color_green section.joinContainer .policyContainer ul li span.required {
+  color: #00a357;
+}
+body.style_color_green .contentsWrap.detail:not(.pages, .cart, .mypage) button.wish.on svg path {
+  fill: #00a357;
+}
+body.style_color_green .contentsWrap.detail > section > header dd.place button,
+body.style_color_green .contentsWrap.detail dl.title dd.option,
+body.style_color_green .contentsWrap.detail .productWrap > li > ul > li > dl + dl dd,
+body.style_color_green .contentsWrap.detail .airWrap > header,
+body.style_color_green .contentsWrap.detail .detailWrap > ul > li header dl dd,
+body.style_color_green ul.detail > li > header h2 span {
+  color: #00a357;
+}
+body.style_color_green .contentsWrap.detail > section > header dd.keyword span {
+  color: #00a357;
+  background-color: #ebf8f2;
+}
+body.style_color_green .contentsWrap.detail .productWrap > li > ul > li > dl dt button.select {
+  border-color: #00a357;
+  color: #00a357;
+}
+body.style_color_green .contentsWrap.detail .summaryWrap > ul > li:before,
+body.style_color_green .contentsWrap.detail .detailWrap > ul > li header:before,
+body.style_color_green .contentsWrap.detail .detailWrap .swiperdot button.on {
+  background-color: #00a357;
+}
+body.style_color_green .popup.map .date button.on {
+  background-color: #00a357;
+  border-color: #00a357;
+}
+body.style_color_green .contentsWrap.detail section.popup.calendar > header .btnDuring > div p {
+  color: #00a357;
+}
+body.style_color_green .contentsWrap.detail section.popup.calendar > article > div .calDate button.today p {
+  border-color: #00a357;
+}
+body.style_color_green .contentsWrap.detail section.popup.calendar > article > div .calDate button.on {
+  background-color: #ebf8f2;
+}
+body.style_color_green .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.start p,
+body.style_color_green .contentsWrap.detail section.popup.calendar > article > div .calDate button.on.end p {
+  background-color: #00a357;
+}
+body.style_color_green .contentsWrap.cart section.travelers dl.orderInfo dd .inputWrap > button.on,
+body.style_color_green .contentsWrap.cart div.travelers button.add,
+body.style_color_green .contentsWrap.cart li.policy > .btn_default.on {
+  color: #00a357;
+  border-color: #00a357;
+}
+body.style_color_green li.cost dl dd.price,
+dy.style_color_green .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion,
+body.style_color_green .contentsWrap.cart li.amount header dl dd,
+body.style_color_green .contentsWrap.cart li.policy ul li span.required,
+body.style_color_green .contentsWrap.mypage > .headerWrap > ul li.on p,
+body.style_color_green .contentsWrap.mypage .componentWrap.card dl.itemInfo dd.promotion,
+body.style_color_green .contentsWrap.mypage li.amount header dl dd,
+body.style_color_green .contentsWrap.cart .componentWrap.card.thumbnail ul.itemList .promotion {
+  color: #00a357;
+}
+body.style_color_green .contentsWrap.cart dl.orderInfo dd .componentWrap.menu.category.wrap ul.itemList li.on {
+  background-color: #ebf8f2;
+  color: #00a357;
+}
+body.style_color_green .contentsWrap.cart div.travelers button.on {
+  border-color: #00a357;
+  background-color: #00a357;
+  color: #fff;
+}
+body.style_color_green .contentsWrap.mypage > .headerWrap > ul li.on:after {
+  background-color: #00a357;
+}
+body.style_color_green .contentsWrap.board > .headerWrap > ul li.on {
+  border-bottom-color: #00a357;
+}
+body.style_color_green .contentsWrap.board > .headerWrap > ul li:hover p,
+body.style_color_green .contentsWrap.board > .headerWrap > ul li.on p,
+body.style_color_green .contentsWrap.board ul.list li dt span.on,
+body.style_color_green .contentsWrap.board ul.list li dd.category,
+body.style_color_green .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_green .contentsWrap.board.read section.cs li.reply > header,
+body.style_color_green .contentsWrap.board ul.list li dd.category,
+body.style_color_green .contentsWrap.board.read li.detail header dl dd.category,
+body.style_color_green .contentsWrap.board.read section.cs li.reply > header {
+  color: #00a357;
+}
+
+body.style_color_green .asideWrap aside .asideContainer.login .linkWrap button span {
+  background-color: #00a357;
+}
+body.style_color_green .componentWrap.nav li:hover {
+  background-color: #ebf8f2;
+  color: #00a357;
+}
+body.style_color_green .componentWrap.nav li.on,
+body.style_color_green .componentWrap.nav.sub li p.on,
+body.style_color_green .searchWrap .searchContainer > .popularword ol li:before {
+  color: #00a357;
+}
+body.style_color_green .componentWrap.nav.circle li:hover .imgWrap:after {
+  border-color: #00a357;
+}
+body.style_color_green .componentWrap.card ul.itemList > li .imgWrap span.label {
+  background-color: #00a357;
+}
+body.style_color_green .componentWrap.card dl.itemInfo dd.keyword span {
+  color: #00a357;
+  background-color: #ebf8f2;
+}
+body.style_color_green .componentWrap.card dl.itemInfo dd.priceWrap .state span.ing {
+  background-color: #00a357;
+}
+body.style_color_green .componentWrap.menu ul.itemList li.on p {
+  color: #00a357;
+}
+body.style_color_green .componentWrap.menu ul.itemList li:hover p {
+  color: #00a357;
+}
+body.style_color_green .componentWrap.card.ratio.inside dl dd {
+  background: #00a357;
+}
+body.style_color_green .componentWrap.card.extend.inside .dimmed dd.label {
+  background: #00a357;
+}
+body.style_color_green .componentWrap.card.circle dl.itemInfo dd.label {
+  background: #00a357;
+}
+body.style_color_green .componentWrap.menu.tab ul.itemList li.on p {
+  color: #00a357;
+}
+body.style_color_green .componentWrap.menu.tab ul.itemList li.on {
+  border-bottom-color: #00a357;
+}
+body.style_color_green .componentWrap.menu.square.extend ul.itemList li.on {
+  border-color: #00a357;
+}
+body.style_color_green .componentWrap.menu.square.wrap ul.itemList li.on {
+  border-color: #00a357;
+}
+body.style_color_green .componentWrap.menu.circle.extend ul.itemList li.on:after {
+  border-color: #00a357;
+}
+body.style_color_green .componentWrap.menu.circle.wrap ul.itemList li.on:after {
+  border-color: #00a357;
+}
+body.style_color_green .componentWrap.menu.category.extend ul.itemList li.on {
+  background: #00a357;
+}
+body.style_color_green .componentWrap.menu.category.extend ul.itemList li:hover:not(.on) {
+  color: #00a357;
+  background: #ebf8f2;
+}
+body.style_color_green .componentWrap.menu.category.wrap ul.itemList li.on {
+  background: #00a357;
+}
+body.style_color_green .componentWrap.menu.category.wrap ul.itemList li:hover:not(.on) {
+  color: #00a357;
+  background: #ebf8f2;
+}
+body.style_color_green .componentWrap.menu.tag.extend ul.itemList li.on {
+  background: #00a357;
+  border-color: #00a357;
+}
+body.style_color_green .componentWrap.menu.tag.extend ul.itemList li:hover:not(.on) {
+  color: #00a357;
+}
+body.style_color_green .componentWrap.menu.tag.wrap ul.itemList li.on {
+  background: #00a357;
+  border-color: #00a357;
+}
+body.style_color_green .componentWrap.menu.tag.wrap ul.itemList li:hover:not(.on) {
+  color: #00a357;
+}
+body.style_color_green .componentWrap.board dl.boardList dd {
+  color: #00a357;
+}
+
+body.style_color_green .popupContainer[class*="Alert"] .popupContents > p:before {
+  background-color: #00a357;
+}
+
+body.style_color_green .contentsWrap.cart div.travelers button.add:not(.on) img,
+body.style_color_green .contentsWrap.board ul.list li dt span.on img,
+body.style_color_green .contentsWrap.board.read section.cs li.reply > header img,
+body.style_color_green .componentWrap.nav li:hover a > img,
+body.style_color_green .componentWrap.nav li.on a > img,
+body.style_color_green .componentWrap.nav.sub li:hover img,
+body.style_color_green .contentsWrap.detail > section > header dd.place button img,
+body.style_color_green .contentsWrap.detail .detailWrap > ul > li header dl dd img,
+body.style_color_green .contentsWrap.detail .detailWrap .detailmessage article header img,
+body.style_color_green .contentsWrap.detail .airWrap > header img,
+body.style_color_green .loadingContainer img {
+  filter: invert(42%) sepia(88%) saturate(2718%) hue-rotate(129deg) brightness(91%) contrast(101%);
+} /* #00A357	*/
+
+/*	HEADER BGCOLOR - ORANGE	*/
+body.style_bg_orange .contentsWrap > .headerWrap.newType {
+  background: #e3601c;
+}
+body.style_bg_orange .contentsWrap > .headerWrap.newType > header h1 a img,
+body.style_bg_orange .contentsWrap.detail.newTypesub > .headerWrap > header h1 .btn_back img {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_orange .contentsWrap > .headerWrap.newType > header button::before {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_orange .contentsWrap > .headerWrap.newType.type3 > header button::before {
+  /* filter: brightness(0) invert(1); */
+}
+body.style_bg_orange .contentsWrap > .headerWrap.newType.type3 > header button {
+  filter: none;
+}
+body.style_bg_orange .contentsWrap > .headerWrap.newType.type4 > header button {
+  filter: none;
+}
+body.style_bg_orange .contentsWrap > .headerWrap.newType > header button .new {
+  background: #2e3034;
+}
+body.style_bg_orange .contentsWrap .componentWrap.banner.one.newswiperType.type5 .swiper-slide .slideRight {
+  background: #e3601c;
+}
+body.style_bg_orange .swiper-controlbtn,
+body.style_bg_orange .swiper-controlbtn-stop {
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+}
+body.style_bg_orange .contentsWrap .componentWrap.banner.one.newswiperType.type2 .mySwiper .swiper-slide-thumb-active {
+  background: #e3601c;
+}
+body.style_bg_orange .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.on a p {
+  color: #e3601c;
+}
+body.style_bg_orange .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_tour a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour2_bl.png") center center no-repeat;
+  background-size: 44px 36px;
+}
+/* body.style_bg_orange .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_hotel a p::before {
+  content: "";
+  background: url("../images/icon_nav_hotel4_rd.png") center 9px no-repeat;
+  background-size: 49px 49px;
+}
+body.style_bg_orange .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_air a p::before {
+  content: "";
+  background: url("../images/icon_nav_air4_rd.png") center center no-repeat;
+  background-size: 44px 44px;
+}
+body.style_bg_orange .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_tour a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour4_rd.png") center center no-repeat;
+  background-size: 44px 36px;
+}
+body.style_bg_orange .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_car a p::before {
+  content: "";
+  background: url("../images/icon_nav_car4_rd.png") center center no-repeat;
+  background-size: 49px 38px;
+}
+body.style_bg_orange .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_golf a p::before {
+  content: "";
+  background: url("../images/icon_nav_golf4_rd.png") center center no-repeat;
+  background-size: 46px 41px;
+} */
+
+/*	HEADER BGCOLOR - GREEN	*/
+body.style_bg_green .contentsWrap > .headerWrap.newType {
+  background: #107b45;
+}
+body.style_bg_green .contentsWrap > .headerWrap.newType > header h1 a img,
+body.style_bg_green .contentsWrap.detail.newTypesub > .headerWrap > header h1 .btn_back img {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_green .contentsWrap > .headerWrap.newType > header button::before {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_green .contentsWrap > .headerWrap.newType.type3 > header button {
+  filter: none;
+}
+body.style_bg_green .contentsWrap > .headerWrap.newType.type4 > header button {
+  filter: none;
+}
+body.style_bg_green .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.on a p {
+  color: #107b45;
+}
+body.style_bg_green .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.on {
+  border-color: #107b45;
+}
+body.style_bg_green .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_hotel.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_hotel_gn.png") center center no-repeat;
+}
+body.style_bg_green .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_air.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_air_gn.png") center center no-repeat;
+}
+body.style_bg_green .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_tour.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour_gn.png") center center no-repeat;
+}
+body.style_bg_green .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_car.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_car_gn.png") center center no-repeat;
+}
+body.style_bg_green .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_golf.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_golf_gn.png") center center no-repeat;
+}
+body.style_bg_green .contentsWrap .componentWrap.banner.one.newswiperType.type1 .swiper-pagination-bullet-active {
+  background: #107b45;
+}
+body.style_bg_green .footerWrap.newType .footerContainer .copy strong {
+  color: #107b45;
+}
+body.style_bg_green .contentsWrap > .headerWrap.newType > header button .new {
+  background: #e3601c;
+}
+body.style_bg_green .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_hotel a p::before {
+  content: "";
+  background: url("../images/icon_nav_hotel4_rd.png") center center no-repeat;
+  background-size: 49px 49px;
+}
+body.style_bg_green .contentsWrap .componentWrap.banner.one.newswiperType.type5 .swiper-slide .slideRight {
+  background: #107b45;
+}
+body.style_bg_green .swiper-controlbtn,
+body.style_bg_green .swiper-controlbtn-stop {
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+}
+body.style_bg_green .contentsWrap .componentWrap.banner.one.newswiperType.type2 .mySwiper .swiper-slide-thumb-active {
+  background: #107b45;
+}
+body.style_bg_green .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.on a p {
+  color: #107b45;
+}
+body.style_bg_green .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_tour a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour2_bl.png") center center no-repeat;
+  background-size: 44px 36px;
+}
+body.style_bg_green .newTypesub .selectContainer,
+body.style_bg_green .newTypesub .selectContainer .people {
+  border-color: #107b45;
+}
+body.style_bg_green .newTypesub .selectContainer p,
+body.style_bg_green .contentsWrap.detail.newTypesub .totalPrice .sum {
+  color: #107b45;
+}
+body.style_bg_green .newTypesub .selectContainer button {
+  background: #107b45;
+}
+body.style_bg_green .contentsWrap.detail.newTypesub .totalPrice dd button,
+body.style_bg_green .contentsWrap.detail.newTypesub > .footerWrap > footer > button.wish {
+  background-color: #107b45;
+  border-color: #107b45;
+}
+
+/*	HEADER BGCOLOR - BLUE	*/
+body.style_bg_blue .contentsWrap > .headerWrap.newType {
+  background: #0858cf;
+}
+body.style_bg_blue .contentsWrap > .headerWrap.newType > header h1 a img,
+body.style_bg_blue .contentsWrap.detail.newTypesub > .headerWrap > header h1 .btn_back img {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_blue .contentsWrap > .headerWrap.newType > header button::before {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_blue .contentsWrap > .headerWrap.newType.type3 > header button {
+  filter: none;
+}
+body.style_bg_blue .contentsWrap > .headerWrap.newType.type4 > header button {
+  filter: none;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.on a p {
+  color: #0858cf;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.on {
+  border-color: #0858cf;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_hotel.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_hotel_bl.png") center center no-repeat;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_air.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_air_bl.png") center center no-repeat;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_tour.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour_bl.png") center center no-repeat;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_car.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_car_bl.png") center center no-repeat;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_golf.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_golf_bl.png") center center no-repeat;
+}
+body.style_bg_blue .contentsWrap .componentWrap.banner.one.newswiperType.type1 .swiper-pagination-bullet-active {
+  background: #0858cf;
+}
+body.style_bg_blue .footerWrap.newType .footerContainer .copy strong {
+  color: #0858cf;
+}
+body.style_bg_blue .contentsWrap > .headerWrap.newType > header button .new {
+  background: #e3601c;
+}
+
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.on a p,
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li:hover a p {
+  color: #0858cf;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_hotel a p::before {
+  content: "";
+  background: url("../images/icon_nav_hotel4_bl.png") center center no-repeat;
+  background-size: 49px 49px;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_air a p::before {
+  content: "";
+  background: url("../images/icon_nav_air4_bl.png") center center no-repeat;
+  background-size: 44px 44px;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_tour a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour4_bl.png") center center no-repeat;
+  background-size: 47px 52px;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_car a p::before {
+  content: "";
+  background: url("../images/icon_nav_car4_bl.png") center center no-repeat;
+  background-size: 33px 41px;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_golf a p::before {
+  content: "";
+  background: url("../images/icon_nav_golf4_bl.png") center center no-repeat;
+  background-size: 46px 41px;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li:hover a p span::before,
+body.style_bg_blue .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.on a p span::before {
+  background-color: #095fe0;
+  opacity: 1;
+}
+body.style_bg_blue .contentsWrap .componentWrap.banner.one.newswiperType.type5 .swiper-slide .slideRight {
+  background: #095fe0;
+}
+body.style_bg_blue .swiper-controlbtn,
+body.style_bg_blue .swiper-controlbtn-stop {
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+}
+body.style_bg_blue .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_tour a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour2_bl.png") center center no-repeat;
+  background-size: 44px 36px;
+}
+body.style_bg_blue .newTypesub .selectContainer,
+body.style_bg_blue .newTypesub .selectContainer .people {
+  border-color: #0858cf;
+}
+body.style_bg_blue .newTypesub .selectContainer p,
+body.style_bg_blue .contentsWrap.detail.newTypesub .totalPrice .sum {
+  color: #0858cf;
+}
+body.style_bg_blue .newTypesub .selectContainer button {
+  background: #0858cf;
+}
+body.style_bg_blue .contentsWrap.detail.newTypesub .totalPrice dd button,
+body.style_bg_blue .contentsWrap.detail.newTypesub > .footerWrap > footer > button.wish {
+  background-color: #0858cf;
+  border-color: #0858cf;
+}
+body.style_bg_blue .contentsWrap.detail.newTypesub .productWrap .triptype {
+  background: #e3601c;
+  border-color: #d95c1b;
+}
+
+/*	HEADER BGCOLOR - DARK	*/
+body.style_bg_dark .contentsWrap > .headerWrap.newType {
+  background: #2e3034;
+}
+body.style_bg_dark .contentsWrap > .headerWrap.newType > header h1 a img,
+body.style_bg_dark .contentsWrap.detail.newTypesub > .headerWrap > header h1 .btn_back img {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_dark .contentsWrap > .headerWrap.newType > header button::before {
+  filter: brightness(0) invert(1);
+}
+body.style_bg_dark .contentsWrap > .headerWrap.newType.type3 > header button {
+  filter: none;
+}
+body.style_bg_dark .contentsWrap > .headerWrap.newType.type4 > header button {
+  filter: none;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.on a p {
+  color: #2e3034;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.on {
+  border-color: #2e3034;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_hotel.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_hotel_dk.png") center center no-repeat;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_air.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_air_dk.png") center center no-repeat;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_tour.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour_dk.png") center center no-repeat;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_car.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_car_dk.png") center center no-repeat;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType .componentWrap.menu ul.itemList li.nav_golf.on a p::before {
+  content: "";
+  background: url("../images/icon_nav_golf_dk.png") center center no-repeat;
+}
+body.style_bg_dark .contentsWrap .componentWrap.banner.one.newswiperType.type1 .swiper-pagination-bullet-active {
+  background: #2e3034;
+}
+body.style_bg_dark .contentsWrap > .headerWrap.newType > header button .new {
+  background: #e3601c;
+}
+
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.on a p,
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li:hover a p {
+  color: #0858cf;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_hotel a p::before {
+  content: "";
+  background: url("../images/icon_nav_hotel4_bl.png") center center no-repeat;
+  background-size: 49px 49px;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_air a p::before {
+  content: "";
+  background: url("../images/icon_nav_air4_bl.png") center center no-repeat;
+  background-size: 44px 44px;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_tour a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour4_bl.png") center center no-repeat;
+  background-size: 47px 52px;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_car a p::before {
+  content: "";
+  background: url("../images/icon_nav_car4_bl.png") center center no-repeat;
+  background-size: 33px 41px;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.nav_golf a p::before {
+  content: "";
+  background: url("../images/icon_nav_golf4_bl.png") center center no-repeat;
+  background-size: 46px 41px;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li:hover a p span::before,
+body.style_bg_dark .contentsWrap .navContainer.newType.type5 .componentWrap.menu ul.itemList li.on a p span::before {
+  background-color: #095fe0;
+  opacity: 1;
+}
+body.style_bg_dark .contentsWrap .componentWrap.banner.one.newswiperType.type5 .swiper-slide .slideRight {
+  background: #2e3034;
+}
+body.style_bg_dark .swiper-controlbtn,
+body.style_bg_dark .swiper-controlbtn-stop {
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
+}
+body.style_bg_dark .contentsWrap .componentWrap.banner.one.newswiperType.type2 .mySwiper .swiper-slide-thumb-active {
+  background: #2e3034;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.on a p {
+  color: #0855c8;
+}
+body.style_bg_dark .contentsWrap .navContainer.newType.type2 .componentWrap.menu ul.itemList li.nav_tour a p::before {
+  content: "";
+  background: url("../images/icon_nav_tour2_bl.png") center center no-repeat;
+  background-size: 44px 36px;
+}
+/* body.style_bg_dark .footerWrap.newType .footerContainer .copy strong {
+  color: #2e3034;
+} */

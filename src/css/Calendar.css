@@ -1,0 +1,27 @@
+.calDate {
+    display: flex;
+}
+
+.calDateDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.calDateDiv p{
+    font-size: xx-small;
+    color: orange;
+}
+
+.calDate button{
+    border: 0ch;
+    background-color: white;
+}
+
+.calDate button.outRange{
+    border: 0ch;
+    color: lightgray;
+}
+
+.calDate button.on{
+    background-color: orange;
+}
