@@ -1,4 +1,5 @@
 import axios from 'axios';
+// import axios from './lib/axios.js';
 
 const api = axios.create({
     baseURL : "https://supplyapi.tripbox.co.kr",
