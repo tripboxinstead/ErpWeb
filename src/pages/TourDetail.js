@@ -62,7 +62,7 @@ const TourDetail = () => {
                 <div class="imageContainer">
                 <ul class="image">
                     {
-                        productInDetail.data.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ImageURL} />) )
+                        productInDetail.data.ProductImages && productInDetail.data.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ImageURL} />) )
                     }                                      
                 </ul>
                 {
@@ -127,9 +127,9 @@ const TourDetail = () => {
                 <article>
                 
                     <ul class="itemList">
-                    <li class="on">
+                    {/* <li class="on">
                         <p><a href="#tab01">상품설명</a></p>
-                    </li>
+                    </li> */}
                     <li>
                         <p><a href="#tab02">투어 소개</a></p>
                     </li>
@@ -144,9 +144,9 @@ const TourDetail = () => {
                     <li>
                         <p><a href="#tab05">일정안내</a></p>
                     </li>
-                    <li>
+                    {/* <li>
                         <p><a href="#tab06">이용후기</a></p>
-                    </li>
+                    </li> */}
                     </ul>
                 </article>
                 </div>        
@@ -155,7 +155,9 @@ const TourDetail = () => {
 
                  
                 <li id="tab02">
-                    {  productInDetail.data.ProductContents.filter(item => item.ContentType === '040100').map( (item,index) => (<TourIntro key={index} item={item} />) )}
+                    {  
+                        productInDetail.data.ProductContents.filter(item => item.ContentType === '040100').map( (item,index) => (<TourIntro key={index} item={item} />) )
+                    }
                 </li>
                 
                 <li id="tab03">
@@ -163,7 +165,8 @@ const TourDetail = () => {
                     <section>
                     <article>
                         <ul class="tableStyle meetinfo">
-                        {                        
+                        {               
+                              
                             productInDetail.data.ProductContents.filter(item => item.ContentType === '040901').map( (item,index) => (<MeetInfo key={index} item={item} />) )
                         
                         }                      
@@ -173,29 +176,33 @@ const TourDetail = () => {
                 </li>
 
                 <li id="tab04">               
-                    {                        
-                            productInDetail.data.ProductContents.filter(item => item.ContentType === '040103').map( (item,index) => (<ServiceGuide key={index} item={item} />) )
+                    {                  
+                          
+                        productInDetail.data.ProductContents.filter(item => item.ContentType === '040103').map( (item,index) => (<ServiceGuide key={index} item={item} />) )
                         
                     }                          
                     
                 </li>
                 
-                <li id="tab05">
-                        <header>
-                        <div class="inline both">
-                            <h2>일정안내</h2>
-                            {/* <button type="button" class="btn_map_small">위치보기</button> */}
-                        </div>
-                        </header>
-                        <section class="schedule">
-                        <ul class="scheduleWrap">
-                            {
-                                Array.from(Array(productInDetail.data.TourDays), (day,index) => <Itinerary key={index} day={index + 1} items={productInDetail.data.ProductItinerarys} />)                                
-                            }
-                            
-                        </ul>
-                        </section>
+                {
+                    productInDetail.data.ProductItinerarys &&
+                    <li id="tab05">
+                            <header>
+                            <div class="inline both">
+                                <h2>일정안내</h2>
+                                {/* <button type="button" class="btn_map_small">위치보기</button> */}
+                            </div>
+                            </header>
+                            <section class="schedule">
+                            <ul class="scheduleWrap">
+                                {
+                                    Array.from(Array(productInDetail.data.TourDays), (day,index) => <Itinerary key={index} day={index + 1} items={productInDetail.data.ProductItinerarys} />)                                
+                                }
+                                
+                            </ul>
+                            </section>
                     </li>
+                }
                 
                 </ul>
                 </article>

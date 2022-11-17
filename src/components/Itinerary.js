@@ -1,20 +1,25 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import ItineraryAllDay from './ItineraryAllDay';
 import ItineraryTour from './ItineraryTour';
 import ItineraryTourEtc from './ItineraryTourEtc';
 
 const Itinerary = ({day,items}) => {
 
-    console.log("day",day);
-    console.log("items",items);
+    // const [allDay, setAllDay] = useState(items.sort((a,b) => {
+    //     return b.seq - a.seq;
+    // }).filter(item => item.Day === parseInt(day) && !item.PlaceName    ))
 
-    console.log("items",items.length);
-    console.log("items",items[0].day);
+    const [allDay, setAllDay] = useState(items.sort((a,b) => {
+        return b.seq - a.seq;
+    }).filter(item => item.Day === parseInt(day) ))
 
+    
+    
     if (items.length == 0) {
         return;
     }
-     
+
+     console.log("allday",allDay);
 
   return (
     <>
@@ -27,19 +32,26 @@ const Itinerary = ({day,items}) => {
             </header>
             {/* <article class="open" style={{display : "block" }}> */}
             <article  >
-                <h4>전체 일정</h4>
-                <div class="summaryWrapbox">
-                {
-                    items &&
-                   
-                    <ItineraryAllDay items={items.sort((a,b) => {
-                            return b.seq - a.seq;
-                        }).filter(item => item.Day === parseInt(day) && item.PlaceName !== ""   )}/>
-                  
-                    }
-                  
-               
-                </div>
+
+                { 
+                    allDay.length > 1 ?
+                
+                    <>
+                        <h4>전체 일정</h4>
+                        <div class="summaryWrapbox">
+                        
+                            <ItineraryAllDay day={day} items={items.sort((a,b) => {
+                                    return b.seq - a.seq;
+                                }).filter(item => item.Day === parseInt(day)    )}/>
+
+                            {/* <ItineraryAllDay items= {allDay}/>
+                         */}
+                                            
+                        </div>
+                    </>
+                    : null                
+                }
+
                 <div class="detailWrap">
                 <ul class="tour">
                 {
