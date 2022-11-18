@@ -28,8 +28,6 @@ const responsive = {
 
 const ItineraryTour = ( {item}) => {
 
-    console.log("ItineraryTour", item)
-
   return (
     <>
 
@@ -46,10 +44,10 @@ const ItineraryTour = ( {item}) => {
                 </p>
                 {/* <p class="info lightgrey mt-2">※ 현지 기상상황에 따라 후지산 조망이 어려울 수 있습니다.</p> */}
             </article>
-            <div class="detailmessage">
+            <div className="detailmessage">
                 <article>
                 <header>{item.PlaceName}</header>
-                <div class="imageContainer">
+                <div className="imageContainer">
                     <ul>
                         {
                             item.ItineraryImages &&  item.ItineraryImages.map((item,index) =>   <ItineraryImages key={index} item={item} /> ) 
@@ -57,12 +55,12 @@ const ItineraryTour = ( {item}) => {
                     </ul>
                     
                 </div>
-                <p>- api 어디서 뭘 가져오지?</p>
+                <p>점검중</p>
                 </article>
             </div>
             {
                 item.OptionItinerarys &&
-                <div class="option">                    
+                <div className="option">                    
                     <p>선택가능한 <strong>{item.OptionItinerarys.length}</strong>개의 일정이 있습니다.</p>                
                 </div>
             }

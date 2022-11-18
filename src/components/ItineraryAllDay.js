@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import TourIntro from './TourIntro';
+
 
 const ItineraryAllDay = ({day,items}) => {
 
@@ -31,7 +31,7 @@ const ItineraryAllDay = ({day,items}) => {
   return (
     <>
        
-        <div class="summaryWrap">
+        <div className="summaryWrap">
              {
                 
                  newItem.length > 0 && newItem.map((Mainitem,index) => {
@@ -41,7 +41,7 @@ const ItineraryAllDay = ({day,items}) => {
                         <ul key={index}>
                             {
                                 Mainitem.length > 0 && Mainitem.map((subItems, sIndex) => {                      
-                                   return  <li key={sIndex} class="tour"><p><span>{ !subItems.PlaceName ? subItems.Title : subItems.PlaceName}</span></p></li>
+                                   return  <li key={sIndex} className="tour"><p><span>{ !subItems.PlaceName ? subItems.Title : subItems.PlaceName}</span></p></li>
                                 })
                             }
                     

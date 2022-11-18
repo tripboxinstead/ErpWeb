@@ -13,6 +13,7 @@ import TourIntro from './../components/TourIntro';
 const TourDetail = () => {
 
     const [productInDetail, setProductInDetail] = useState();
+
     const [loading, setLoading] = useState(true);
     const {product_id} = useParams();
 
@@ -32,42 +33,54 @@ const TourDetail = () => {
                 );
 
                 setProductInDetail(data);
+             
+                // console.log("data",data.ProductContents);
+                // if (!data.data.ProductContents) {
+                //     setMeetInfos(data.data.ProductContents.filter(item => item.ContentType === '040901'));
+                // }
+              
+              
                 setLoading(false);
 
             }
             catch(e) {
-                console.error("ttt",e);
+               // console.error("ttt",e);
             }
         }
 
         handleGetProductInDetail();
 
-    },[]);
+    },[product_id,[]]);
 
 
     if (loading) {
         return;
     }
 
+    if (!productInDetail) {
+        //console.log("error");
+        return null;
+    }
+
 
   return (
     <>
-        <div id="container" class="container">
+        <div id="container" className="container">
           
-            <div class="contentsWrap detail newTypesub">
+            <div className="contentsWrap detail newTypesub">
                
-                <section class="tour">
+                <section className="tour">
                 <header>
 
-                <div class="imageContainer">
-                <ul class="image">
+                <div className="imageContainer">
+                <ul className="image">
                     {
                         productInDetail.data.ProductImages && productInDetail.data.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ImageURL} />) )
                     }                                      
                 </ul>
                 {
                     productInDetail.data.ProductImages &&
-                    <ul class="thumbnail">
+                    <ul className="thumbnail">
                         {
                             productInDetail.data.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ThumbURL} />) )
                         }                                       
@@ -75,44 +88,44 @@ const TourDetail = () => {
                 }
                 </div>
                   
-                    <dl class="itemInfo">
-                    <dd class="code">
+                    <dl className="itemInfo">
+                    <dd className="code">
                         <span>상품코드</span>
                         <strong>{productInDetail.data.ProductCode}</strong>
                     </dd>
                     <dt>{productInDetail.data.ProductName}</dt>
-                    <dd class="keyword"> 
+                    <dd className="keyword"> 
                         {       
                            productInDetail.data.Keywords.split(',').map((item,index) => ( <Keyword key={index} item = {item}/>))                            
                         }                                            
                     </dd>
-                    <dd class="inline both top mt-10">
-                        <div class="left">
-                        <p class="grade"><span class="hide">평점</span><span>{productInDetail.data.Rating}</span></p>
-                        <p class="epilogue"><span class="hide">후기</span><span>{productInDetail.data.Reviews}</span></p>
+                    <dd className="inline both top mt-10">
+                        <div className="left">
+                        <p className="grade"><span className="hide">평점</span><span>{productInDetail.data.Rating}</span></p>
+                        <p className="epilogue"><span className="hide">후기</span><span>{productInDetail.data.Reviews}</span></p>
                         </div>
-                        <div class="right">
+                        <div className="right">
                         {/* <button type="button" class="btn_map">지도보기</button> */}
                         </div>
                     </dd>
                     <dd>
-                        <ul class="tableStyle">
+                        <ul className="tableStyle">
                         <li>
-                            <dl class="w50p">
+                            <dl className="w50p">
                             <dt>미팅장소</dt>
                             <dd>{productInDetail.data.MeetingPointName}</dd>
                             </dl>
-                            <dl class="w50p">
+                            <dl className="w50p">
                             <dt>투어일정</dt>
                             <dd>{productInDetail.data.TourDays}일</dd>
                             </dl>
                         </li>
                         <li>
-                            <dl class="w50p">
+                            <dl className="w50p">
                             <dt>종료장소</dt>
                             <dd>{productInDetail.data.TourEndPointName}</dd>
                             </dl>
-                            <dl class="w50p">
+                            <dl className="w50p">
                             <dt>최소 행사인원</dt>
                             <dd>{productInDetail.data.AvailableMinPerson}명</dd>
                             </dl>
@@ -123,10 +136,10 @@ const TourDetail = () => {
                 </header>
                 <article>
 
-                <div class="componentWrap menu tab">
+                <div className="componentWrap menu tab">
                 <article>
                 
-                    <ul class="itemList">
+                    <ul className="itemList">
                     {/* <li class="on">
                         <p><a href="#tab01">상품설명</a></p>
                     </li> */}
@@ -137,7 +150,7 @@ const TourDetail = () => {
                         <p><a href="#tab03">미팅정보</a></p>
                     </li>
                     </ul>
-                    <ul class="itemList">
+                    <ul className="itemList">
                     <li>
                         <p><a href="#tab04">이용안내</a></p>
                     </li>
@@ -151,50 +164,58 @@ const TourDetail = () => {
                 </article>
                 </div>        
                     
-                <ul class="detail">
+                <ul className="detail">
 
-                 
-                <li id="tab02">
-                    {  
-                        productInDetail.data.ProductContents.filter(item => item.ContentType === '040100').map( (item,index) => (<TourIntro key={index} item={item} />) )
-                    }
-                </li>
+                { 
+                    productInDetail.data.ProductContents &&
+                    <li id="tab02">
+                        {  
+                            productInDetail.data.ProductContents.filter(item => item.ContentType === '040100').map( (item,index) => (<TourIntro key={index} item={item} />) )
+                        }
+                    </li>
+                }
                 
-                <li id="tab03">
-                    <header><h2>미팅정보</h2></header>
-                    <section>
-                    <article>
-                        <ul class="tableStyle meetinfo">
-                        {               
-                              
-                            productInDetail.data.ProductContents.filter(item => item.ContentType === '040901').map( (item,index) => (<MeetInfo key={index} item={item} />) )
-                        
-                        }                      
-                        </ul>
-                    </article>
-                    </section>
-                </li>
+                { 
+                    productInDetail.data.ProductContents &&
+                    <li id="tab03">
+                        <header><h2>미팅정보</h2></header>
+                        <section>
+                        <article>
+                            <ul class="tableStyle meetinfo">
+                            {               
+                                
+                                productInDetail.data.ProductContents.filter(item => item.ContentType === '040901').map( (item,index) => (<MeetInfo key={index} item={item} />) )
+                            
+                            }                      
+                            </ul>
+                        </article>
+                        </section>
+                    </li>
+                }
 
-                <li id="tab04">               
-                    {                  
-                          
-                        productInDetail.data.ProductContents.filter(item => item.ContentType === '040103').map( (item,index) => (<ServiceGuide key={index} item={item} />) )
+                { 
+                    productInDetail.data.ProductContents &&
+                    <li id="tab04">               
+                        {                  
+                            
+                            productInDetail.data.ProductContents.filter(item => item.ContentType === '040103').map( (item,index) => (<ServiceGuide key={index} item={item} />) )
+                            
+                        }                          
                         
-                    }                          
-                    
-                </li>
+                    </li>
+                }
                 
                 {
                     productInDetail.data.ProductItinerarys &&
                     <li id="tab05">
                             <header>
-                            <div class="inline both">
+                            <div className="inline both">
                                 <h2>일정안내</h2>
                                 {/* <button type="button" class="btn_map_small">위치보기</button> */}
                             </div>
                             </header>
-                            <section class="schedule">
-                            <ul class="scheduleWrap">
+                            <section className="schedule">
+                            <ul className="scheduleWrap">
                                 {
                                     Array.from(Array(productInDetail.data.TourDays), (day,index) => <Itinerary key={index} day={index + 1} items={productInDetail.data.ProductItinerarys} />)                                
                                 }

@@ -19,7 +19,7 @@ const Itinerary = ({day,items}) => {
         return;
     }
 
-     console.log("allday",allDay);
+    // console.log("allday",allDay);
 
   return (
     <>
@@ -38,7 +38,7 @@ const Itinerary = ({day,items}) => {
                 
                     <>
                         <h4>전체 일정</h4>
-                        <div class="summaryWrapbox">
+                        <div className="summaryWrapbox">
                         
                             <ItineraryAllDay day={day} items={items.sort((a,b) => {
                                     return b.seq - a.seq;
@@ -52,8 +52,8 @@ const Itinerary = ({day,items}) => {
                     : null                
                 }
 
-                <div class="detailWrap">
-                <ul class="tour">
+                <div className="detailWrap">
+                <ul className="tour">
                 {
                     items.length > 0 ?
                     items.sort((a,b) => {
@@ -63,7 +63,7 @@ const Itinerary = ({day,items}) => {
                     }) : <p>no </p> 
                 }
                 </ul>
-                {items && <ItineraryTourEtc items = {items} day={day} /> }               
+                {items && <ItineraryTourEtc items = {items} day={day}  /> }               
 
                 </div>
             </article>
