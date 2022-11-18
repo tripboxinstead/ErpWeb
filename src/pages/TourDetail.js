@@ -8,6 +8,7 @@ import MainImage from '../components/MainImage';
 import MeetInfo from '../components/MeetInfo';
 import ServiceGuide from '../components/ServiceGuide';
 import TourIntro from './../components/TourIntro';
+import Loading from '../components/Loading';
 
 
 const TourDetail = () => {
@@ -32,14 +33,7 @@ const TourDetail = () => {
                         
                 );
 
-                setProductInDetail(data);
-             
-                // console.log("data",data.ProductContents);
-                // if (!data.data.ProductContents) {
-                //     setMeetInfos(data.data.ProductContents.filter(item => item.ContentType === '040901'));
-                // }
-              
-              
+                setProductInDetail(data);                                           
                 setLoading(false);
 
             }
@@ -54,7 +48,8 @@ const TourDetail = () => {
 
 
     if (loading) {
-        return;
+        
+        return (<Loading />);
     }
 
     if (!productInDetail) {
