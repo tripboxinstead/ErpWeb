@@ -1,8 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 
-const MainImage = ({url}) => {
+const MainImage = ({url,oldUrl,handleMainImageChange}) => {
+
+  const [oUrl, setOurl] = useState(oldUrl);
+
+  const handleImageView = (e) => {
+    console.log(e.target.getAttribute('src'));
+    console.log(oUrl);
+
+    handleMainImageChange(oUrl);
+
+  }
+
   return (
-    <li><img src={url} width="" height="" alt="" /></li>
+    <li><img src={url} width="" height="" alt="" onClick={handleImageView}  /></li>
   )
 }
 

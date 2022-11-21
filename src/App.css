@@ -1,0 +1,15 @@
+/* 
+@media screen and (max-width: 1100px) {
+    .navbar-toggler {
+      display: block;
+    }
+  } */
+
+.carousel .slider-wrapper {
+  width: 50%;
+}
+
+.carousel .thumb {
+  width: 5%;
+  height: 50px;
+}

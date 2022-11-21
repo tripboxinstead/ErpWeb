@@ -1,67 +1,72 @@
-import React,{useEffect} from 'react'
-import ItineraryImages from './ItineraryImages';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React from 'react'
 import Util from '../helpers/Util';
+import ImageSide from './ImageSide';
 
-
-const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
-
-const ItineraryTour = ( {item}) => {
+const ItineraryTour = ( {items,day}) => {
 
   return (
     <>
 
         <li>
             <header>
+             
                 <dl>
-                <dt><span>{item.Title}</span></dt>
-                <dd><img src="images/icon_clock.png" width="" height="" alt="" />{item.TourStart} ~ {item.TourEnd} (약 {Util.duration(item.Duration)} 소요)</dd>
+                <dt><span>{items.Title}</span></dt>
+                <dd><img src="images/icon_clock.png" width="" height="" alt="" />{items.TourStart} ~ {items.TourEnd} (약 {Util.duration(items.Duration)} 소요)</dd>
                 </dl>
             </header>
             <article>
                 <p>
-                {item.Desc}
+                {items.Desc}
                 </p>
                 {/* <p class="info lightgrey mt-2">※ 현지 기상상황에 따라 후지산 조망이 어려울 수 있습니다.</p> */}
             </article>
+            
+            {/* {
+              
+              items.ItineraryImages &&
+              <div style={{width:'100%'}} ><ImageSide items ={items.ItineraryImages}  /> </div>
+                
+              } */}
+              
+              {/* {items.ItineraryImages && items.ItineraryImages.map((item,index) =>  ( <ItineraryImages key={index} url = {item.ImageURL} day= {index}  />))     } */}
+            
+             
             <div className="detailmessage">
                 <article>
-                <header>{item.PlaceName}</header>
-                <div className="imageContainer">
-                    <ul>
-                        {
-                            item.ItineraryImages &&  item.ItineraryImages.map((item,index) =>   <ItineraryImages key={index} item={item} /> ) 
-                        }
-                    </ul>
-                    
-                </div>
-                <p>점검중</p>
+                <header>{items.PlaceName}</header>
+                { 
+
+                  items.ItineraryImages && <ImageSide items ={items.ItineraryImages} day={day}  />
+                  
+                  // items.ItineraryImages &&
+                 
+                 
+                  // <Carousel  responsive={responsive} className="imageContainer"    >       
+                  // {        
+                               
+                  //       //  item.ItineraryImages.map((item,index) =>  {
+                          
+                  //       //     return   <div key={index}  > <img src={item.ImageURL} width="" height="" alt="" />   </div>
+                          
+                  //       //   }) 
+
+                  //          <div>dddddd</div>                 
+                  //       // items.ItineraryImages.map((item,index) =>  ( <ItineraryImages key={index} url = {item.ImageURL} day= {index}  />))                              
+                  // }
+                  // </Carousel> 
+                                   
+                 
+                }
+                <p>점검중2</p>
+               
                 </article>
             </div>
+
             {
-                item.OptionItinerarys &&
+                items.OptionItinerarys &&
                 <div className="option">                    
-                    <p>선택가능한 <strong>{item.OptionItinerarys.length}</strong>개의 일정이 있습니다.</p>                
+                    <p>선택가능한 <strong>{items.OptionItinerarys.length}</strong>개의 일정이 있습니다.</p>                
                 </div>
             }
         </li>

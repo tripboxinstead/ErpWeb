@@ -9,15 +9,26 @@ const Itinerary = ({day,items}) => {
     //     return b.seq - a.seq;
     // }).filter(item => item.Day === parseInt(day) && !item.PlaceName    ))
 
-    const [allDay, setAllDay] = useState(items.sort((a,b) => {
-        return b.seq - a.seq;
-    }).filter(item => item.Day === parseInt(day) ))
+   // const [dayInfo, setDayInfo] = useState()
+
+    // const [allDay, setAllDay] = useState(items.sort((a,b) => {
+    //     return b.seq - a.seq;
+    // }).filter(item => item.Day === parseInt(day) ))
+
 
     
+    // useEffect (() => {
+        
+    //     setDayInfo(day);
+
+
+    // },[day,items])
+
     
-    if (items.length == 0) {
-        return;
-    }
+    // if (items.length == 0) {
+    //     return;
+    // }
+
 
     // console.log("allday",allDay);
 
@@ -34,7 +45,7 @@ const Itinerary = ({day,items}) => {
             <article  >
 
                 { 
-                    allDay.length > 1 ?
+                    items.length > 1 ?
                 
                     <>
                         <h4>전체 일정</h4>
@@ -43,10 +54,7 @@ const Itinerary = ({day,items}) => {
                             <ItineraryAllDay day={day} items={items.sort((a,b) => {
                                     return b.seq - a.seq;
                                 }).filter(item => item.Day === parseInt(day)    )}/>
-
-                            {/* <ItineraryAllDay items= {allDay}/>
-                         */}
-                                            
+       
                         </div>
                     </>
                     : null                
@@ -59,10 +67,11 @@ const Itinerary = ({day,items}) => {
                     items.sort((a,b) => {
                         return b.seq - a.seq;
                     }).filter(item => item.Day === parseInt(day) && item.LocationType !== "038002").map((item,index) => {                      
-                        return <ItineraryTour key={index} item={item} />
+                        return <ItineraryTour key={index} items={item} day={day} />
                     }) : <p>no </p> 
                 }
                 </ul>
+                
                 {items && <ItineraryTourEtc items = {items} day={day}  /> }               
 
                 </div>

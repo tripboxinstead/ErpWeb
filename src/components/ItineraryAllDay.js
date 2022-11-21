@@ -23,7 +23,7 @@ const ItineraryAllDay = ({day,items}) => {
     
           }
 
-        division(items,5);
+        division(items,4);
 
       },[items,day])
 
@@ -37,6 +37,7 @@ const ItineraryAllDay = ({day,items}) => {
                  newItem.length > 0 && newItem.map((Mainitem,index) => {
                     return (
                         
+                      
                         
                         <ul key={index}>
                             {

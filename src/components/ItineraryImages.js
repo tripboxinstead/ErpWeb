@@ -1,12 +1,24 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
-const ItineraryImages = ({item}) => {
+const ItineraryImages = ({url}) => {
+
+  // useEffect (() => {
+
+  // //  console.log('image',day)
+
+  // },[url,day,[]])
+
+
   return (
-    <>
-        <li>                  
-             <img src={item.ImageURL} width="" height="" alt="" />                               
-        </li>
-    </>
+
+        <>
+       
+         <li><img src={url} width="" height="" alt="" />   </li>
+
+         {/* <div><img src={url} width="" height="" alt="" />   </div> */}
+        </>
+         
+
   )
 }
 
