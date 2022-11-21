@@ -15,7 +15,7 @@ const MainImage = ({url,oldUrl,handleMainImageChange}) => {
   }
 
   return (
-    <li><img src={url} width="" height="" alt="" onClick={ () => handleMainImageChange(oUrl) }  /></li>
+    <li style={{margin:"1px" }}><img src={url} width="180px" height="180px" alt="" onClick={ () => handleMainImageChange(oUrl) }  /></li>
   )
 }
 

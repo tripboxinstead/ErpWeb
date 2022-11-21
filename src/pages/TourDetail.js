@@ -17,20 +17,20 @@ const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 6
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5
+      items: 6
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 4,
+      items: 5,
 
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 3,
+      items: 4,
 
     },
     
@@ -71,7 +71,7 @@ const TourDetail = () => {
                <section className="tour">
                 <header>
 
-                <div className="imageContainer">
+                <div className="imageContainer" >
                     {
                         Detail.productInDetail.ProductImages &&
 
@@ -92,7 +92,14 @@ const TourDetail = () => {
                     
                     {
                         Detail.productInDetail.ProductImages &&
-                        <Carousel responsive={responsive} className="thumbnail">
+                     
+                       
+                        <Carousel 
+                            responsive={responsive} 
+                            className="thumbnail" 
+                            minimumTouchDrag={80}
+                            
+                        >
                         {/* <ul className="thumbnail"> */}
                         {
                         
@@ -101,6 +108,8 @@ const TourDetail = () => {
                         }                                       
                         {/* </ul> */}
                         </Carousel>
+                        
+                     
                     } 
                 </div>
                     
