@@ -1,8 +1,33 @@
-import React,{useState} from 'react'
+import React,{useState,useRef,useEffect} from 'react'
 import Util from '../helpers/Util';
 import ImageSide from './ImageSide';
 
+import { motion } from "framer-motion"
+
+
 const ItineraryTour = ( {items,day}) => {
+
+  const [width,setWidth] = useState(500);
+  const ref = useRef()
+
+  useEffect( () => {
+
+    if (ref && ref.current) {
+      const tmp = ref.current?.scrollWidth - ref.current?.offsetWidth;
+      if (tmp === 0) {
+        setWidth(() => 500);
+      } else {
+        setWidth(() => tmp);
+      }
+
+      
+
+      console.log(tmp);
+  }
+    
+    // setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+
+  },[]);
 
   return (
     <>
@@ -28,13 +53,44 @@ const ItineraryTour = ( {items,day}) => {
                 <article>
                 <header>{items.PlaceName}</header>
                 
-                { 
+                {/* { 
 
                   items.ItineraryImages && <ImageSide items ={items.ItineraryImages} day={day}  />
                   
+                } */}
+
+                                  
+                {
+                  items.ItineraryImages &&
+
+                  
+                  <motion.div ref={ref} className="carousel" whileTap={"grabbing"}>
+                    <motion.div 
+                      drag="x"
+                      dragConstraints={{ right : 0,left: -width }}
+                      className='inner-carousel'
+                    >
+
+                      { 
+                        items.ItineraryImages.map((item,index) => {
+                          return (
+                            <motion.div className="item">
+                              <img src = {item.ImageURL} alt= "" key={item} />
+                            </motion.div>
+                          )
+
+                        })
+                      }
+                      
+                      {/* // ( <ItineraryImages key={index} url = {item.ImageURL} day= {index}  /> ))  } */}
+
+                    </motion.div>
+                  </motion.div>
                 }
+                
+
                 <p>점검중2</p>
-               
+            
                 </article>
             </div>
             
