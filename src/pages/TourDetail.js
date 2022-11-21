@@ -260,10 +260,6 @@ const TourDetail = () => {
                                             return b.seq - a.seq;
                                         }).filter(item => item.Day === parseInt(index + 1) )
 
-                                            // items.sort((a,b) => {
-                                            //     return b.seq - a.seq;
-                                            // }).filter(item => item.Day === parseInt(day) )
-                                        
                                         }  /> )                                
                                     }
                                     

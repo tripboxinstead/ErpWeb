@@ -1,36 +1,9 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 import ItineraryAllDay from './ItineraryAllDay';
 import ItineraryTour from './ItineraryTour';
 import ItineraryTourEtc from './ItineraryTourEtc';
 
 const Itinerary = ({day,items}) => {
-
-    // const [allDay, setAllDay] = useState(items.sort((a,b) => {
-    //     return b.seq - a.seq;
-    // }).filter(item => item.Day === parseInt(day) && !item.PlaceName    ))
-
-   // const [dayInfo, setDayInfo] = useState()
-
-    // const [allDay, setAllDay] = useState(items.sort((a,b) => {
-    //     return b.seq - a.seq;
-    // }).filter(item => item.Day === parseInt(day) ))
-
-
-    
-    // useEffect (() => {
-        
-    //     setDayInfo(day);
-
-
-    // },[day,items])
-
-    
-    // if (items.length == 0) {
-    //     return;
-    // }
-
-
-    // console.log("allday",allDay);
 
   return (
     <>
@@ -61,22 +34,22 @@ const Itinerary = ({day,items}) => {
                 }
 
                 <div className="detailWrap">
-                <ul className="tour">
-                {
-                    items.length > 0 ?
-                    items.sort((a,b) => {
-                        return b.seq - a.seq;
-                    }).filter(item => item.Day === parseInt(day) && item.LocationType !== "038002").map((item,index) => {                      
-                        return <ItineraryTour key={index} items={item} day={day} />
-                    }) : null
-                }
-                </ul>
-                
-                {items && <ItineraryTourEtc items = {items} day={day}  /> }               
+                    <ul className="tour">
+                    {
+                        items.length > 0 ?
+                        items.sort((a,b) => {
+                            return b.seq - a.seq;
+                        }).filter(item => item.Day === parseInt(day) && item.LocationType !== "038002").map((item,index) => {                      
+                            return <ItineraryTour key={index} items={item} day={day} />
+                        }) : null
+                    }
+                    </ul>
+
+                    {items && <ItineraryTourEtc items = {items} day={day}  /> }               
 
                 </div>
             </article>
-            </li>
+        </li>
     </>
   )
 }
