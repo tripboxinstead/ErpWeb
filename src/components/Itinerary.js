@@ -68,7 +68,7 @@ const Itinerary = ({day,items}) => {
                         return b.seq - a.seq;
                     }).filter(item => item.Day === parseInt(day) && item.LocationType !== "038002").map((item,index) => {                      
                         return <ItineraryTour key={index} items={item} day={day} />
-                    }) : <p>no </p> 
+                    }) : null
                 }
                 </ul>
                 

@@ -13,7 +13,7 @@ const ItineraryAllDay = ({day,items}) => {
             const divide = Math.floor(length / number) + (Math.floor( length % number ) > 0 ? 1 : 0);
             const newArray = [];
           
-            for (let i = 0; i <= divide; i++) {
+            for (let i = 0; i < divide; i++) {
               // 배열 0부터 n개씩 잘라 새 배열에 넣기
               newArray.push(items.splice(0, number)); 
               //setNewItem(newItem => [...newItem,arr.splice(0, number)]) //.push(arr.splice(0, number)); 
@@ -23,7 +23,7 @@ const ItineraryAllDay = ({day,items}) => {
     
           }
 
-        division(items,4);
+        division(items,5);
 
       },[items,day])
 
@@ -36,8 +36,6 @@ const ItineraryAllDay = ({day,items}) => {
                 
                  newItem.length > 0 && newItem.map((Mainitem,index) => {
                     return (
-                        
-                      
                         
                         <ul key={index}>
                             {

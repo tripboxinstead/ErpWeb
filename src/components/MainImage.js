@@ -1,8 +1,9 @@
 import React,{useState} from 'react'
 
-const MainImage = ({url,oldUrl,handleMainImageChange}) => {
+const MainImage = ({url,oldUrl,handleMainImageChange,isMain}) => {
 
   const [oUrl, setOurl] = useState(oldUrl);
+  const [cursorInfo,setCursorInfo] = useState(isMain);
 
   const handleImageView = (e) => {
     // console.log(e.target.getAttribute('src'));
@@ -15,7 +16,11 @@ const MainImage = ({url,oldUrl,handleMainImageChange}) => {
   }
 
   return (
-    <li style={{margin:"1px" }}><img src={url} width="180px" height="180px" alt="" onClick={ () => handleMainImageChange(oUrl) }  /></li>
+           
+    <li style={{margin:"1px",   cursor:"Pointer" } }><img src={url} width="180px" height="180px" alt="" onClick={ () => handleMainImageChange(oUrl) }  /></li>
+   
+    
+    
   )
 }
 

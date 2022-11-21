@@ -68,6 +68,16 @@ const TourDetail = () => {
 
         <div className="contentsWrap detail newTypesub">
                
+
+        {/* <div className="headerWrap newType type1">
+          <header>
+            <h1>
+              <a href="#"><img src="images/logo_or.png" alt="트립박스" /></a>
+            </h1>
+            
+          </header>
+        </div> */}
+
                <section className="tour">
                 <header>
 
@@ -80,9 +90,9 @@ const TourDetail = () => {
                             mainImageUrl ?
 
                             // <MainImage  url={Detail.productInDetail.ProductImages[0].ImageURL} />
-                            <MainImage  url={mainImageUrl}  />
+                            <MainImage  url={mainImageUrl} isMain="Default" />
                             :
-                            <MainImage  url={Detail.productInDetail.ProductImages[0].ImageURL}  />
+                            <MainImage  url={Detail.productInDetail.ProductImages[0].ImageURL} isMain="Default"   />
                             // Detail.productInDetail.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ImageURL} />) )
                         }                                      
                         </ul>
@@ -97,13 +107,17 @@ const TourDetail = () => {
                         <Carousel 
                             responsive={responsive} 
                             className="thumbnail" 
+                            swipeable={true}
+                            arrows={false}
                             minimumTouchDrag={80}
+                            itemClass="carousel-item-padding-40-px"
+                            focusOnSelect={true}
                             
                         >
                         {/* <ul className="thumbnail"> */}
                         {
                         
-                            Detail.productInDetail.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ThumbURL} oldUrl ={item.ImageURL} handleMainImageChange = {handleMainImageChange}  />) )
+                            Detail.productInDetail.ProductImages.map( (item,index) => (<MainImage key={index} isMain="Pointer"  url={item.ThumbURL} oldUrl ={item.ImageURL} handleMainImageChange = {handleMainImageChange}  />) )
                                 
                         }                                       
                         {/* </ul> */}

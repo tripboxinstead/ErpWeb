@@ -39,29 +39,37 @@ const ItineraryTourEtc = ({items,day}) => {
   return (
     <>
      <ul className="tourEtc">
-            
-        <li className="bed" style= {{ backgroundImaged: `url('images/icon_bed.png')` }}>
-        <header>
-            <dl>
-            <dt>
-                {
-                    
-                    items.filter((item) => item.Day === parseInt(day) && item.LocationType === "038002" ).map((item,index) =>                         
-                        {
-
-                            // return  <span key={index}>{item.PlaceName} 또는 Keio Plaza Hotel Tokyo (5성급)</span>
-                            return  <span key={index}>{item.PlaceName}   </span>
-                        }
+        {
+            items.filter((item) => item.Day === parseInt(day) && item.LocationType === "038002" ).length > 0 ?
+            <li className="bed" style= {{ backgroundImaged: `url('images/icon_bed.png')` }}>
+            <header>
+                <dl>
+                <dt>
+                    {
                         
-                    )                
-                }
-            </dt>
-            </dl>
-            
-                 <p className="info">※ 숙박은 출발 일주일전 홈페이지에 알려드립니다.</p>
-                
-        </header>
-        </li>
+                        items.filter((item) => item.Day === parseInt(day) && item.LocationType === "038002" ).map((item,index) =>                         
+                            {
+
+                                // return  <span key={index}>{item.PlaceName} 또는 Keio Plaza Hotel Tokyo (5성급)</span>
+                                return  <span key={index}>{item.PlaceName}   </span>
+                            }
+                            
+                        )                
+                    }
+                </dt>
+                </dl>
+                    {
+                        items.filter((item) => item.Day === parseInt(day) && item.LocationType === "038002" ).length > 0 ?
+                        <p className="info">※ 숙박은 출발 일주일전 홈페이지에 알려드립니다.</p>
+                        : 
+                        null
+                    }
+                    
+            </header>
+            </li> 
+            : 
+            null
+        }
         
         <li className="food" style= {{ backgroundImage: `url('images/icon_meal.png')` }}>
         <article>
