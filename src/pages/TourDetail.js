@@ -10,7 +10,31 @@ import TourIntro from './../components/TourIntro';
 import Loading from '../components/Loading';
 import { useDispatch ,useSelector } from "react-redux";
 import { tourAction } from "../redux/actions/tourAction";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
+const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 4,
+
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 3,
+
+    },
+    
+  };
 
 const TourDetail = () => {
 
@@ -18,27 +42,25 @@ const TourDetail = () => {
     
     const {product_id} = useParams();
     const {Detail,loading} = useSelector(state => state.tour );
-    const [mainImageUrl,setMainImageUrl] = useState()
+    const [mainImageUrl,setMainImageUrl] = useState();
 
     const handleMainImageChange = (e) => {
+       
         setMainImageUrl(e);
+     
     }
 
     useEffect(() => {
+
          dispatch(tourAction.getTourDetailInfo(product_id));    
 
-         setMainImageUrl(Detail.productInDetail.ProductImages[0].ImageURL);
          
      },[product_id]);
 
 
     if (loading) {               
         return (<Loading />);
-    } else {
-        console.log('info1',Detail);
-
-        console.log(Detail.productInDetail.ProductImages)
-    }
+    } 
 
   return (
     <>
@@ -50,27 +72,36 @@ const TourDetail = () => {
                 <header>
 
                 <div className="imageContainer">
-                
-                <ul className="image">
                     {
                         Detail.productInDetail.ProductImages &&
-                        
-                        // <MainImage  url={Detail.productInDetail.ProductImages[0].ImageURL} />
-                        <MainImage  url={mainImageUrl}  />
-                        
-                        // Detail.productInDetail.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ImageURL} />) )
-                    }                                      
-                </ul>
 
-                
-                {
-                    Detail.productInDetail.ProductImages &&
-                    <ul className="thumbnail">
+                        <ul className="image">
                         {
+                            mainImageUrl ?
+
+                            // <MainImage  url={Detail.productInDetail.ProductImages[0].ImageURL} />
+                            <MainImage  url={mainImageUrl}  />
+                            :
+                            <MainImage  url={Detail.productInDetail.ProductImages[0].ImageURL}  />
+                            // Detail.productInDetail.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ImageURL} />) )
+                        }                                      
+                        </ul>
+                    }
+                
+
+                    
+                    {
+                        Detail.productInDetail.ProductImages &&
+                        <Carousel responsive={responsive} className="thumbnail">
+                        {/* <ul className="thumbnail"> */}
+                        {
+                        
                             Detail.productInDetail.ProductImages.map( (item,index) => (<MainImage key={index} url={item.ThumbURL} oldUrl ={item.ImageURL} handleMainImageChange = {handleMainImageChange}  />) )
+                                
                         }                                       
-                    </ul>
-                } 
+                        {/* </ul> */}
+                        </Carousel>
+                    } 
                 </div>
                     
                     <dl className="itemInfo">

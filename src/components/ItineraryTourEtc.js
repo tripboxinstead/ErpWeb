@@ -33,7 +33,7 @@ const ItineraryTourEtc = ({items,day}) => {
     },[items,day,[]])
 
     
-    console.log("tt",items.filter((item) => item.Day === parseInt(day) && item.LocationType === "038002" ))
+    //console.log("tt",items.filter((item) => item.Day === parseInt(day) && item.LocationType === "038002" ))
 
 
   return (

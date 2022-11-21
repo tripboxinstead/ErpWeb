@@ -11,7 +11,8 @@ const MeetInfo = ({item}) => {
             <dl>
             <dt><img src="images/icon_ok.png" alt="" />{item.ContentTitle}</dt>
             <dd>
-                <p>{Parser(item.Content.replace(/\\r\\n|\\n|\\r/gm,"<br>"))}</p> 
+                {/* <p>{Parser(item.ContentTag.replace(/\\r\\n|\\n|\\r/gm,"<br>"))}</p>  */}
+                <p style={{padding :'10px'}}>{Parser(item.ContentTag)}</p> 
                 {/* <p>{Parser(`<b>ddddd</b>`)}</p>  */}
             </dd>
             </dl>
