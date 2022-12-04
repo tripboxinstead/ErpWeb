@@ -20,8 +20,6 @@ const ItineraryTour = ( {items,day}) => {
         setWidth(() => tmp);
       }
 
-      console.log(items);
-
   }
     
     // setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
@@ -36,8 +34,8 @@ const ItineraryTour = ( {items,day}) => {
             <header>
              
                 <dl>
-                <dt><span>{items.Title}</span></dt>
-                <dd><img src={items.PlaceIconURL} width="" height="" alt="" />{items.TourStart} ~ {items.TourEnd} (약 {Util.duration(items.Duration)} 소요)</dd>
+                <dt><span>{items.Title && items.Title}</span></dt>
+                <dd><img src={items.PlaceIconURL && items.PlaceIconURL} width="" height="" alt="" />{items.TourStart && items.TourStart} ~ {items.TourEnd && items.TourEnd} (약 {items.Duration && Util.duration(items.Duration)} 소요)</dd>
                 </dl>
             </header>
             <article>
@@ -54,7 +52,7 @@ const ItineraryTour = ( {items,day}) => {
                   return (
                     <div className="detailmessage" key={index}>
                       <article>
-                        <header>{item.PlaceName}</header>
+                        <header>{item.PlaceName && item.PlaceName}</header>
 
                         {
                           item.PlaceImages && 
