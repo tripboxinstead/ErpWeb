@@ -25,7 +25,7 @@ const ImageSide = ({items,day}) => {
     }, 0.0000000000000000001);
 
     return () => {
-      window.removeEventListener("resize", () => {
+      window.removeEventListener("resize", ()    => {
         setResize(window.innerWidth);
       });
 
