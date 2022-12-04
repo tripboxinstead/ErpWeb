@@ -111,7 +111,7 @@ const TourDetail = () => {
                             arrows={false}
                             minimumTouchDrag={80}
                             itemClass="carousel-item-padding-40-px"
-                            focusOnSelect={true}
+                            // focusOnSelect={true}
                             
                         >
                         {/* <ul className="thumbnail"> */}

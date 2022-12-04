@@ -20,9 +20,8 @@ const ItineraryTour = ( {items,day}) => {
         setWidth(() => tmp);
       }
 
-      
+      console.log(items);
 
-      console.log(tmp);
   }
     
     // setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
@@ -38,7 +37,7 @@ const ItineraryTour = ( {items,day}) => {
              
                 <dl>
                 <dt><span>{items.Title}</span></dt>
-                <dd><img src="images/icon_clock.png" width="" height="" alt="" />{items.TourStart} ~ {items.TourEnd} (약 {Util.duration(items.Duration)} 소요)</dd>
+                <dd><img src={items.PlaceIconURL} width="" height="" alt="" />{items.TourStart} ~ {items.TourEnd} (약 {Util.duration(items.Duration)} 소요)</dd>
                 </dl>
             </header>
             <article>
@@ -48,17 +47,37 @@ const ItineraryTour = ( {items,day}) => {
                 {/* <p class="info lightgrey mt-2">※ 현지 기상상황에 따라 후지산 조망이 어려울 수 있습니다.</p> */}
             </article>
             
+            {
+              items.RelatedPlaces &&
+              (
+                items.RelatedPlaces.map((item,index) => {
+                  return (
+                    <div className="detailmessage" key={index}>
+                      <article>
+                        <header>{item.PlaceName}</header>
+
+                        {
+                          item.PlaceImages && 
+                          <div class="imageContainer">
+                            <ul>
+                              <li> <img src = {item.PlaceImages[0].ThumbURL} alt= "" key={item} /> </li>
+                            </ul>
+                          </div>
+                        }
+
+                        <p>{item.PlaceDesc}</p>
+            
+                        </article>
+                    </div>
+                  )
+                })
+              )
+            }
          
-            <div className="detailmessage">
+            {/* <div className="detailmessage">
                 <article>
                 <header>{items.PlaceName}</header>
-                
-                {/* { 
-
-                  items.ItineraryImages && <ImageSide items ={items.ItineraryImages} day={day}  />
-                  
-                } */}
-
+                                
                                   
                 {
                   items.ItineraryImages &&
@@ -82,8 +101,6 @@ const ItineraryTour = ( {items,day}) => {
                         })
                       }
                       
-                      {/* // ( <ItineraryImages key={index} url = {item.ImageURL} day= {index}  /> ))  } */}
-
                     </motion.div>
                   </motion.div>
                 }
@@ -92,7 +109,7 @@ const ItineraryTour = ( {items,day}) => {
                 <p>점검중2</p>
             
                 </article>
-            </div>
+            </div> */}
             
           
             {

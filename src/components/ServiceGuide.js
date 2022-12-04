@@ -13,7 +13,7 @@ const ServiceGuide = ({item}) => {
         <section>
         <article>
         {/* <p>{Parser(item.ContentTag.replace(/\\r\\n|\\n|\\r/gm,"<br>"))}</p>  */}
-        <p style={{padding :'10px'}}>{Parser(item.ContentTag)}</p> 
+            <p style={{padding :'10px',whiteSpace: "pre-wrap" }}>{Parser(item.ContentTag)}</p> 
         {
             item.ContentImages &&
             <div className="tripinfoImg">
@@ -31,7 +31,7 @@ const ServiceGuide = ({item}) => {
                     item.ContentImages &&
                     
             
-                    <ul className="image">            
+                    <ul className="thumbnail">            
                     {item.ContentImages.map((item,index) => ( <MainImage key={index} url={item.ThumbURL} />))}
                     </ul>
                 }
