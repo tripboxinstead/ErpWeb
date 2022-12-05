@@ -14,20 +14,20 @@
   height: 50px;
 } */
 
-.service-guide {
-  font-size: 10px !important;
-  padding : 10px;
-  
+.service-guide * {
+  font-size: 10pt !important;
+  padding : 10px;  
   white-Space: pre-wrap;
+  font-family: "Noto Sans KR" !important ;
 }
 
-/* 
-.meet-info {
-  font-size: 10px !important;
-  padding : 10px;
-  
+
+.meet-info > * {
+  font-size: 10pt !important;
+  font-family: "Noto Sans KR" !important ;
+  padding : 10px;  
   white-Space: pre-wrap;
-} */
+}
 
 .item {
   height: 186px;
