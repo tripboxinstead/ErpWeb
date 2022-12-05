@@ -13,7 +13,7 @@ const ServiceGuide = ({item}) => {
         <section>
         <article>
         {/* <p>{Parser(item.ContentTag.replace(/\\r\\n|\\n|\\r/gm,"<br>"))}</p>  */}
-            <p style={{padding :'10px',whiteSpace: "pre-wrap" }}>{Parser(item.ContentTag)}</p> 
+            <p className='service-guide' >{Parser(item.ContentTag)}</p> 
         {
             item.ContentImages &&
             <div className="tripinfoImg">

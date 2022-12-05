@@ -109,7 +109,7 @@ const TourDetail = () => {
                             className="thumbnail" 
                             swipeable={true}
                             arrows={false}
-                            minimumTouchDrag={80}
+                            minimumTouchDrag={100}
                             itemClass="carousel-item-padding-40-px"
                             // focusOnSelect={true}
                             
