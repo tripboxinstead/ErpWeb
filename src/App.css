@@ -29,6 +29,13 @@
   white-Space: pre-wrap;
 }
 
+.tour-intro > * {
+  font-size: 10pt !important;
+  font-family: "Noto Sans KR" !important ;
+  padding : 10px;  
+  white-Space: pre-wrap;
+}
+
 .item {
   height: 186px;
   width: 235px;

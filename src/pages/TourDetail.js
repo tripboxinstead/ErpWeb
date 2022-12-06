@@ -68,16 +68,6 @@ const TourDetail = () => {
 
         <div className="contentsWrap detail newTypesub">
                
-
-        {/* <div className="headerWrap newType type1">
-          <header>
-            <h1>
-              <a href="#"><img src="images/logo_or.png" alt="트립박스" /></a>
-            </h1>
-            
-          </header>
-        </div> */}
-
                <section className="tour">
                 <header>
 
@@ -220,7 +210,7 @@ const TourDetail = () => {
                             <header><h2>미팅정보</h2></header>
                             <section>
                                 <article>
-                                    <ul class="tableStyle meetinfo">
+                                    <ul className="tableStyle meetinfo">
                                     {               
                                         
                                         Detail.productInDetail.ProductContents.filter(item => item.ContentType === '040901').map( (item,index) => (<MeetInfo key={index} item={item} />) )
@@ -256,9 +246,11 @@ const TourDetail = () => {
                                 <section className="schedule">
                                 <ul className="scheduleWrap">
                                     {
-                                        Array.from(Array(Detail.productInDetail.TourDays), (item,index) => <Itinerary key={index} day={index + 1} items={Detail.productInDetail.ProductItinerarys.sort((a,b) => {
+                                        Array.from(Array(parseInt(Detail.productInDetail.TourDays.replace('일',''))), (item,index) => <Itinerary key={index} day={index + 1} items={Detail.productInDetail.ProductItinerarys.sort((a,b) => {
                                             return b.seq - a.seq;
                                         }).filter(item => item.Day === parseInt(index + 1) )
+
+                                      
 
                                         }  /> )                                
                                     }

@@ -56,7 +56,7 @@ const ItineraryTour = ( {items,day}) => {
 
                         {
                           item.PlaceImages && 
-                          <div class="imageContainer">
+                          <div className="imageContainer">
                             <ul>
                               <li> <img src = {item.PlaceImages[0].ThumbURL} alt= "" key={item} /> </li>
                             </ul>

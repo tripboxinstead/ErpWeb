@@ -7,7 +7,7 @@ const TourIntro = ({item}) => {
         <header><h2>투어 소개</h2></header>
         <section>
             <article>
-            <p style={{padding :'10px'}}>
+            <p className='tour-intro' >
                 {Parser(item.ContentTag)}
                 {/* <p style={{padding :'10px'}}>{Parser(item.ContentTag)}</p>  */}
             </p>

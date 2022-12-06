@@ -2,7 +2,7 @@ import React from 'react'
 
 const Loading = () => {
   return (
-    <div class="loadingContainer">
+    <div className="loadingContainer">
 	    <img src="images/img_loading.svg" width="" height="" alt="" />
     </div>
 

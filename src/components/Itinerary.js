@@ -5,6 +5,8 @@ import ItineraryTourEtc from './ItineraryTourEtc';
 
 const Itinerary = ({day,items}) => {
 
+    console.log("day",day)
+
   return (
     <>
          <li>
