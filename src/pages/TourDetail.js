@@ -146,7 +146,7 @@ const TourDetail = () => {
                             </dl>
                             <dl className="w50p">
                             <dt>투어일정</dt>
-                            <dd>{Detail.productInDetail.TourDays}일</dd>
+                            <dd>{Detail.productInDetail.TourDays}</dd>
                             </dl>
                         </li>
                         <li>
